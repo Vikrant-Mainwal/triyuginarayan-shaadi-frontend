@@ -1,0 +1,53 @@
+"use client";
+import React, { useState } from "react";
+import faqs from "../../asset/faqs.json";
+import Image from "next/image";
+import Plus from "../../asset/images/plus.svg";
+import Minus from "../../asset/images/minus.svg";
+
+const Faqs = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFaqs = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-6 mb-10">
+      <h2 className="text-[32px] md:text-[52px] text-center font-bold raleway">
+        Frequently <span className="text-[#A42D2B]">Asked</span> Questions
+      </h2>
+
+      <div className="flex flex-col gap-4">
+        {faqs.map((item, index) => (
+          <div key={index} className="border border-black rounded-lg p-4 shadow-sm">
+            <div
+              className="cursor-pointer flex justify-between items-center"
+              onClick={() => toggleFaqs(index)}
+              aria-expanded={openIndex === index}
+            >
+              <h3 className="text-[18px] md:text-[22px] font-semibold">{item.question}</h3>
+              <Image
+                src={openIndex === index ? Minus : Plus}
+                alt={openIndex === index ? "Collapse" : "Expand"}
+                className={`transition-transform duration-300 ${
+                  openIndex === index ? "rotate-180" : ""
+                }`}
+              />
+            </div>
+
+            <div
+              className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                openIndex === index ? "max-h-[500px] mt-2 opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <p className="text-[16px] md:text-[18px]">{item.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Faqs;

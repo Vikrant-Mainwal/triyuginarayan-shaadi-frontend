@@ -1,0 +1,34 @@
+[
+    {
+    "title": "Standard",
+    "description": "Ideal for small, meaningful ceremonies",
+    "price": "₹99,999",
+    "nights": 1,
+    "guests": "Up to 10 guests",
+    "features": [
+      "Vegetarian meals: breakfast, lunch & dinner",
+      "Wedding rituals at Triyuginarayan Temple with local priest",
+      "Basic floral mandap setup",
+      "Traditional Dhol–Damau music performance",
+      "On-ground support by our Triyuginarayan wedding planner"
+    ]
+  },
+  {
+    "title": "Premium",
+    "description": "Designed for couples seeking a full spiritual & cultural experience",
+    "price": "₹4,99,999",
+    "nights": 1,
+    "guests": "Up to 30 guests",
+    "features": [
+      "Marriage registration support",
+      "Stay and meals for 25 guests",
+      "Complete wedding ceremony with priest",
+      "Floral décor at the temple and mandap setup",
+      "Dhol–Damau and Mangal Geet performances",
+      "Bonfire experience on request",
+      "5 short wedding highlight reels",
+      "Return gifts with Char Dham Prashad",
+      "Dedicated coordination from your Triyuginarayan wedding planner"
+    ]
+  }
+]
