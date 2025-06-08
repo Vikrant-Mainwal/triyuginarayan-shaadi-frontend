@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <div
   className="min-h-screen w-full bg-cover bg-center bg-no-repeat
-             bg-[url('/heroImage.jpg')] md:bg-[url('/HeroImage.svg')]"
+             bg-image md:bg-image1"
 >
   <div className="h-full w-full flex justify-center md:justify-end items-center md:items-start text-center md:text-start">
     <div className="flex flex-col gap-13 p-4 md:p-10 md:px-18 w-[850px]">

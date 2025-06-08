@@ -6,12 +6,34 @@ body{
   background-color: #FDFFF2;
 }
 
-.open-sans {
+/* .open-sans {
   font-family: "Open Sans", sans-serif;
 }
 
 .raleway {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
 }
+p, span, a, li, button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-image {
+  background-image: url('/hero_image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-image {
+    background-image: url('/HeroImage.jpg'); /* note the lowercase 'h' */
+    background-size: cover;
+    background-position: center;
+  } 
+}
+
 
