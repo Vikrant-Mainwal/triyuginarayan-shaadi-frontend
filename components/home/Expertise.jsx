@@ -36,7 +36,7 @@ const Expertise = () => {
       
       {/* Heading */}
       <div className="flex flex-col gap-4 py-6">
-        <h2 className="text-[32px] md:text-[52px] font-bold raleway">
+        <h2 className="text-[28px] md:text-[50px] font-bold raleway">
           Our <span className="text-[#A42D2B]">Expertise</span>
         </h2>
         <p className="text-[16px] md:text-[22px] open-sans">

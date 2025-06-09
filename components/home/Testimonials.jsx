@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Testimonials = () => {
   return (
     <div><div className="w-[90%] m-auto mt-25 mb-5">
-        <h2 className="text-center text-[52px]">
+        <h2 className="text-center text-[28px] md:text-[50px]]">
           What <span className="text-[#A42D2B]">Couples</span> Are Saying
         </h2>
         <div className="flex justify-center items-center">

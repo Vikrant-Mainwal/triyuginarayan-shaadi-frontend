@@ -14,13 +14,13 @@ const Plans = () => {
           <Image src={Triyuginarayan} alt="image" />
         </div>
 
-        <h1 className="text-[28px] md:text-[52px] font-bold">
+        <h1 className="text-[28px] md:text-[50px] font-bold">
           {" "}
           <span> Our </span>{" "}
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
         </h1>
 
-        <p className="text-[16px] md:text-[22px] text-center open-sans ">
+        <p className="text-[16px] md:text-[18px] text-justify md:text-center open-sans px-6">
           We offer two thoughtfully crafted wedding packages designed to fit
           different visions and budgets. Both ensure an authentic Triyuginarayan
           destination wedding experience.

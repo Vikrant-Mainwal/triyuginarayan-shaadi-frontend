@@ -12,12 +12,12 @@ const ContactSupportHero = () => {
         />
       </div>
 
-      <div className="w-full md:w-1/2 flex flex-col gap-6">
-        <h2 className="text-[2.5rem] md:text-[4rem] font-semibold leading-snug">
+      <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-start">
+        <h2 className="text-[35px] md:text-[52px] font-semibold leading-snug">
           “We're here to help <span className="text-[#A42D2B]">Begin</span> your{" "}
           <span className="text-[#A42D2B]">New journey</span>”
         </h2>
-        <div className="flex flex-col gap-4 text-[1.1rem] leading-relaxed">
+        <div className="flex flex-col gap-4 text-[16px] md:text-[18px] text-justify md:text-center">
           <p>
             Planning a wedding is a big step. Planning one at a sacred place
             like Triyuginarayan Temple makes it even more special — and we

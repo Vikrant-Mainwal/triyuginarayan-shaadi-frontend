@@ -42,7 +42,7 @@ const travelTips = [
 const TravelTipsSection = () => {
   return (
     <section className="w-[90%] max-w-7xl mx-auto mt-10 p-10 text-start">
-      <h2 className="text-[2.8rem] text-center font-semibold mb-10">
+      <h2 className="text-[28px] md:text-[50px] text-center font-semibold mb-10">
         Helpful Travel <span className="text-[#A42D2B]">Tips</span>
       </h2>
 

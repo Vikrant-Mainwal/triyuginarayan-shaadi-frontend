@@ -7,10 +7,10 @@ const HeroSection = () => {
 
   return (
     <div
-      className="h-fit w-full bg-cover bg-center bg-no-repeat bg-image md:bg-image1 
-                 flex flex-col md:flex-row justify-end items-end md:items-start text-center md:text-start "
+      className="h-screen w-full bg-cover bg-center bg-no-repeat bg-image md:bg-image1 
+                 flex flex-col md:flex-row justify-end items-end md:items-start text-center md:text-start"
     >
-      <div className="flex flex-col md:justify-end gap-12 p-4 md:p-10 md:px-18 w-full max-w-[850px] m-auto md:m-0">
+      <div className="flex flex-col justify-end gap-12 p-4 md:p-10 md:px-18 w-full max-w-[850px] mb-20">
         <p className="hidden lg:block text-white text-sm pt-2 text-right">
           Rudraprayag, Uttarakhand | Triyuginarayan Temple Wedding Experts
         </p>

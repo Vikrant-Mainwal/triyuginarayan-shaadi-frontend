@@ -15,7 +15,7 @@ const Footer = () => {
           </h2>
         </div>
         <div className="w-full md:w-[50%] flex items-center justify-center md:pr-5">
-          <p className="text-[18px] text-center md:text-start">
+          <p className="text-[16px] md:text-[18px] text-justify md:text-start">
             Your love deserves a sacred start. Let us help you plan a wedding
             that’s deeply meaningful, beautifully organized, and forever remembered.
           </p>

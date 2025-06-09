@@ -14,7 +14,7 @@ const Faqs = () => {
 
   return (
     <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-6 mb-10 mt-25">
-      <h2 className="text-[32px] md:text-[52px] text-center font-bold raleway">
+      <h2 className="text-[28px] md:text-[50px] text-center font-bold raleway">
         Frequently <span className="text-[#A42D2B]">Asked</span> Questions
       </h2>
 
