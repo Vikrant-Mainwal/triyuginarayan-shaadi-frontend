@@ -1,44 +1,59 @@
 import Image from "next/image";
 import React from "react";
-import Logo from '../../asset/images/logo.svg'
-import image from '../../asset/images/top-up.svg';
+import image from "../../asset/images/top-up.svg";
+import Slogan from "../../asset/images/logo-slogan.svg";
+import BookWedding from "../../asset/images/book-wedding.svg";
+import { IoIosCloseCircle } from "react-icons/io";
 
 const TopUpForm = ({ onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <div className="bg-white rounded-xl flex flex-col md:flex-row w-[90%] max-w-3xl shadow-lg relative overflow-hidden">
         {/* Close button */}
-        <button
+        <div
+          className="absolute top-4 right-4 cursor-pointer text-gray-500"
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-600 hover:text-black text-xl z-10"
         >
-          X
-        </button>
+          <IoIosCloseCircle className="w-[50px] h-[50px]" />
+        </div>
 
         {/* Left side (form) */}
         <div className="w-full md:w-1/2 p-6 md:p-10 bg-[#FFF9F4]">
-          <Image src={Logo} alt="logo" className="w-20 mb-4" />
-          <h2 className="text-2xl font-semibold">
-            Book your <span className="text-[#A42D2B] font-bold">Dream </span>Wedding!
-          </h2>
+          <Image src={Slogan} alt="logo" className="w-20 mb-4" />
+          <div>
+            <Image src={BookWedding} alt="image" />
+          </div>
           <form className="space-y-4 mt-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full border border-gray-300 px-4 py-2 rounded"
-            />
-            <input
-              type="tel"
-              placeholder="Phone No."
-              className="w-full border border-gray-300 px-4 py-2 rounded"
-            />
-            <input
-              type="date"
-              className="w-full border border-gray-300 px-4 py-2 rounded"
-            />
+            <div className="flex flex-col gap-3 text-start">
+              <label htmlFor="">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full border border-gray-300 px-4 py-2 rounded"
+              />
+            </div>
+
+            <div className="flex flex-col gap-3 text-start">
+              <label htmlFor="">Phone Number</label>
+              <input
+                type="number"
+                placeholder="Phone No."
+                className="w-full border border-gray-300 px-4 py-2 rounded"
+              />
+            </div>
+
+            <div className="flex flex-col gap-3 text-start">
+              <label htmlFor="">Date</label>
+
+              <input
+                type="date"
+                className="w-full border border-gray-300 px-4 py-2 rounded"
+              />
+            </div>
+
             <button
               type="button"
-              className="bg-[#F5A623] hover:bg-[#d78e18] text-white font-semibold py-2 px-6 rounded w-full"
+              className="bg-[#FFB52C] font-semibold py-2 px-6 rounded w-full"
             >
               Plan your Wedding
             </button>

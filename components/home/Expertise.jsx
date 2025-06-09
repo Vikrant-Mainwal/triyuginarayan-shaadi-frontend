@@ -32,7 +32,7 @@ const Expertise = () => {
         ]
    
   return (
-    <div className="w-[90%] md:w-[80%] m-auto mb-10 flex flex-col items-center text-center">
+    <div className="w-[90%] m-auto  flex flex-col items-center text-center mt-25 mb-5">
       
       {/* Heading */}
       <div className="flex flex-col gap-4 py-6">

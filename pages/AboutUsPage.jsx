@@ -6,7 +6,7 @@ import React from 'react'
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <div className='max-w-[1366px] w-full mx-auto '>
         <AboutSection/>
         <WhoWeAreSection/>
         <WhatWeDoSection/>

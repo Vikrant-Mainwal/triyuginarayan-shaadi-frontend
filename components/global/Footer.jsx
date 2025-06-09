@@ -5,7 +5,7 @@ import footerImage from "../../asset/images/footer.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-[#FFE4B8] p-[40px] flex flex-col gap-[50px]">
+    <div className="bg-[#FFE4B8] p-[40px] flex flex-col gap-[50px] max-w-[1366px] w-full mx-auto text-[#000]">
       
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-10 justify-between items-center">

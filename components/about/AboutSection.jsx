@@ -4,7 +4,7 @@ import Temple from "../../asset/images/temple.svg";
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col md:flex-row w-[90%] m-auto mt-10">
+    <div className="flex flex-col md:flex-row w-[90%] m-auto mt-10 gap-5">
       <div className="md:w-[60%] flex flex-col gap-4 text-center md:text-start items-center md:items-start">
         <h2 className="text-[35px] md:text-[67px] font-bold raleway">
           “Where <span className="text-[#A42D2B]">Every</span> Wedding Begins

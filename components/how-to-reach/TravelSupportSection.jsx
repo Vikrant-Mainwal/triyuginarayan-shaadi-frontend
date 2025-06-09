@@ -15,20 +15,23 @@ const TravelSupportSection = () => {
       {/* Travel Options */}
       <div className="flex flex-col text-center gap-10">
         <h3 className="text-[3.6rem] font-semibold">Travel Options</h3>
-        <div className="flex flex-col md:flex-row border border-dashed rounded-lg gap-10 bg-[#FFF8F4] p-8 justify-center items-center">
+        <div className="flex flex-col md:flex-row border border-dashed border-[#717171] rounded-[21px] gap-10 bg-[#FFF8F4] p-8 justify-center items-center">
           <div className="flex flex-col gap-3">
             <h6 className="text-[2.3rem] font-medium">Route</h6>
             <p>Dehradun Airport ⇄ Resort ⇄ Airport</p>
           </div>
 
-          <div className="hidden md:block border-l-2 border-dashed h-40" />
+          <div className="hidden md:block border-l-2 border-dashed h-40 border-[#717171]" />
+          <div className="block md:hidden border border-dashed w-[282px] h-[1px] border-[#717171]" />
 
           <div className="flex flex-col gap-3">
             <h6 className="text-[2.3rem] font-medium">Approx. Charges</h6>
             <p>₹1,00,000 (Round-trip)</p>
           </div>
 
-          <div className="hidden md:block border-l-2 border-dashed h-40" />
+          <div className="hidden md:block border-l-2 border-dashed h-40 border-[#717171]" />
+          <div className="block md:hidden border border-dashed w-[282px] h-[1px] border-[#717171]" />
+
 
           <div className="flex flex-col gap-3">
             <h6 className="text-[2.3rem] font-medium">Includes</h6>

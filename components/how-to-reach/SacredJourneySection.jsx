@@ -8,8 +8,8 @@ const SacredJourneySection = () => {
         <Image src={imageSrc} alt="Shivparvati" className="object-contain h-[500px]" />
       </div>
 
-      <div>
-        <h2 className="text-[3.5rem] md:text-[4rem] leading-tight font-semibold">
+      <div className='text-center md:text-start'>
+        <h2 className="text-[3.5rem] md:text-[4rem] leading-tight font-semibold ">
           “Your <span className="text-[#A42D2B]">Journey</span> to a{" "}
           <span className="text-[#A42D2B]">Sacred</span> Beginning”
         </h2>

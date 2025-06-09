@@ -2,7 +2,7 @@ import React from 'react'
 
 const WeddingCost = () => {
   return (
-    <div className=" w-[80%] flex flex-col gap-6 m-auto mt-5 text-center">
+    <div className=" w-[80%] flex flex-col gap-6 m-auto mt-25 mb-5 text-center">
         <h2 className="text-[28px] md:text-[50px] font-bold raleway">
           Triyuginarayan Temple
           <span className="text-[#A42D2B]">{"   "}Wedding Cost</span>

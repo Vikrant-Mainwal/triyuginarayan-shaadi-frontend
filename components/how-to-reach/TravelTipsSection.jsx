@@ -50,10 +50,12 @@ const TravelTipsSection = () => {
         {travelTips.map(({ icon, alt, text }, index) => (
           <article
             key={index}
-            className="flex flex-col gap-4 bg-[#FFF0E8] shadow-[0_4px_32px_rgba(0,0,0,0.18)] p-8 rounded-lg"
+            className="flex flex-col gap-4 bg-[#FFF0E8] shadow-[0_4px_32px_rgba(0,0,0,0.18)] p-8 rounded-[21px]"
           >
+            <div className="flex justify-center md:justify-start">
             <Image src={icon} alt={alt} />
-            <p className="text-base leading-relaxed">{text}</p>
+            </div>
+            <p className="text-center md:text-start leading-relaxed">{text}</p>
           </article>
         ))}
       </div>

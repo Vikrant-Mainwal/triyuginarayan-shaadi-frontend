@@ -4,7 +4,7 @@ import Mandir from '../../asset/images/about-us-image.svg';
 const About = () => {
   return (
     <div>
-    <div className="flex flex-col md:flex-row w-[90%] m-auto gap-10">
+    <div className="flex flex-col md:flex-row w-[90%] m-auto gap-10 mt-25 mb-5">
       
       <div className="md:w-[50%] flex justify-center">
         <Image src={Mandir} alt="Triyuginarayan Temple" className="h-[500px] w-auto object-contain" />

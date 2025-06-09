@@ -3,7 +3,9 @@ import ContactUsPage from "@/pages/ContactUsPage";
 
 const page = () => {
   return (
-    <ContactUsPage/>
+    <div>
+      <ContactUsPage/>
+    </div>
   );
 };
 

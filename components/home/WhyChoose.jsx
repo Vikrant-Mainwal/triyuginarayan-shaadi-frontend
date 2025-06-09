@@ -5,7 +5,7 @@ import Ellipse from "../../asset/images/Ellipse.svg";
 
 const WhyChoose = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-40 mt-20">
+    <div className="flex flex-col md:flex-row gap-40 mt-25 mb-5">
         <div className="m-auto">
         <Image src={MarriedCouple} alt="image" className='w-[300px] md:w-[50%]'/>
         </div>

@@ -5,21 +5,25 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import Home from "../../asset/images/icons/round-home.svg";
+import People from "../../asset/images/icons/ion_people1.svg";
+import Location from "../../asset/images/icons/location-fill.svg";
+import Call from "../../asset/images/icons/call-filled.svg";
 
 const Navbar = () => {
   const [selected, setSelected] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: "Home", href: "/" },
-    { name: "About us", href: "/about" },
-    { name: "How to reach?", href: "/how-to-reach" },
-    { name: "Contact Us", href: "/contact-us" },
-    { name: "Plans", href: "/plans" },
+    { name: "Home", href: "/",image: Home },
+    { name: "About us", href: "/about" ,image: People },
+    { name: "How to reach?", href: "/how-to-reach",image: Location  },
+    { name: "Contact Us", href: "/contact-us" ,image: Call },
+    // { name: "Plans", href: "/plans" ,image: Logo },
   ];
 
   return (
-    <nav className="flex justify-between items-center px-5 md:px-10 py-5 bg-white">
+    <nav className="flex justify-between items-center px-5 md:px-10 py-5 max-w-[1366px] w-full mx-auto">
       {/* logo */}
       <div className="flex items-center justify-center">
         <Image
@@ -76,6 +80,13 @@ const Navbar = () => {
                 setIsOpen(false);
               }}
             >
+              <Image
+        src={link.image}
+        alt={`${link.name} icon`}
+        width={20}
+        height={20}
+        className="inline-block mr-2"
+      />
               {link.name}
             </Link>
           </li>

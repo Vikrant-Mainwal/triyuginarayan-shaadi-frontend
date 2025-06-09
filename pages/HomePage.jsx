@@ -10,7 +10,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='max-w-[1366px] w-full mx-auto'>
       <HeroSection/>
         <About/>
         <WeddingCost/>
