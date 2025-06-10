@@ -16,11 +16,11 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col gap-5 mt-10  ">
-          <h2 className="text-white text-[35px] md:text-[52px] pt-6 font-raleway font-bold leading-12">
+          <h2 className="text-white text-[35px] md:text-[52px] pt-6 font-bold leading-12">
             Wedding at{" "}
             <span className="text-[#FFE4B8]">Triyuginarayan</span>
           </h2>
-          <h4 className="text-white text-[24px] md:text-[42px] font-open-sans font-semibold">
+          <h4 className="text-white text-[24px] md:text-[42px] open-sans font-semibold">
             Where Divine Love Began
           </h4>
           <p className="text-white w-[300px] md:w-full m-auto md:m-0 text-[16px] md:text-[18px] leading-relaxed font-open-sans">
