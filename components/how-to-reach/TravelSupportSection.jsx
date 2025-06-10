@@ -15,7 +15,7 @@ const TravelSupportSection = () => {
 
       {/* Travel Options */}
       <div className="flex flex-col text-center gap-10">
-        <h3 className="text-[22px] md:text-[32px] font-bold">Travel Options</h3>
+        <h2 className="text-[22px] md:text-[32px] font-bold">Travel Options</h2>
         <div className="flex flex-col md:flex-row border border-dashed border-[#717171] rounded-[21px] gap-10 bg-[#FFF8F4] p-4 justify-center items-center">
           <div className="flex flex-col gap-5 w-[225px]">
             <h6 className="font-bold text-[#A42D2B]">Route</h6>

@@ -270,9 +270,9 @@ const WeddingBookingForm = () => {
             onClick={() => setStep(step - 1)}
           />
         )}
-        <h2 className="text-xl font-semibold m-6 text-center ">
+        <h3 className="text-xl font-semibold m-6 text-center ">
           {steps[step].label}
-        </h2>
+        </h3>
         <form
           onSubmit={(e) => {
             e.preventDefault();
