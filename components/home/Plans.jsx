@@ -19,11 +19,11 @@ const Plans = () => {
           <Image src={Triyuginarayan} alt="image" />
         </div>
 
-        <h1 className="text-[28px] md:text-[50px] font-bold py-6">
+        <h2 className="text-[28px] md:text-[50px] font-bold py-6">
           {" "}
           <span> Our </span>{" "}
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
-        </h1>
+        </h2>
 
         <p className="text-[16px] md:text-[18px] text-justify md:text-center open-sans px-6">
           We offer two thoughtfully crafted wedding packages designed to fit
