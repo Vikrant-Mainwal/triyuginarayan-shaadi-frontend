@@ -1,20 +1,25 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Triyuginarayan from "../../asset/images/triyuginarayan.svg";
 import Tick from "../../asset/images/tick.svg";
-import Pepicons from "../../asset/images/pepicons.svg";
+import Pepicons from "../../asset/images/people-icon.svg";
 import Calender from "../../asset/images/calender.svg";
 import packageData from "../../asset/plan.json";
+import TopUpForm from "../top-up-form/TopUpForm";
 
 const Plans = () => {
+   const [isOpenForm, setIsOpenForm] = useState(false);
+
   return (
     <div className="w-[90%] m-auto mt-25 mb-5">
-      <div className="flex flex-col gap-4 justify-center items-center">
+      <div className="flex flex-col gap-4 justify-center items-center ">
+        
         <div>
           <Image src={Triyuginarayan} alt="image" />
         </div>
 
-        <h1 className="text-[28px] md:text-[50px] font-bold">
+        <h1 className="text-[28px] md:text-[50px] font-bold py-6">
           {" "}
           <span> Our </span>{" "}
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
@@ -31,12 +36,12 @@ const Plans = () => {
         {packageData.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col justify-between items-center rounded-[21px] shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] h-[1100px] md:h-[1200px] w-[316px] md:w-[550px] mt-10 p-3 ${
+            className={`flex flex-col justify-between items-center rounded-[21px] shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] h-fit md:h-[1200px] w-[316px] md:w-[550px] mt-10 p-3 ${
               index === 1 ? "bg-[#FFF0E8]" : "bg-white "
             }`}
           >
             <div className="flex flex-col items-center gap-4 mt-10">
-              <h2 className="text-[26px] md:text-[45px]">{item.title}</h2>
+              <h2 className="text-[26px] md:text-[45px] font-bold">{item.title}</h2>
               <p className="text-[14px] md:text-[18px] text-center p-[12px]">
                 {item.description}
               </p>
@@ -44,11 +49,11 @@ const Plans = () => {
                 {item.price}
               </h3>
               <div className="flex gap-5">
-                <p className="flex text-[12px] md:text-[16px]">
+                <p className="flex text-[12px] items-center gap-1 md:text-[16px]">
                   <Image src={Pepicons} alt="image" />
                   <span>{item.nights} Night </span>
                 </p>
-                <p className="flex text-[12px] md:text-[16px]">
+                <p className="flex text-[12px] items-center gap-1 md:text-[16px]">
                   <Image src={Calender} alt="image" />
                   <span>{item.guests}</span>
                 </p>
@@ -78,9 +83,10 @@ const Plans = () => {
               </div>
             </div>
 
-            <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 text-white mb-15 cursor-pointer">
+            <button className="bg-[#A42D2B] rounded-[7px] px-8 py-3 text-white my-15 cursor-pointer " onClick={()=>setIsOpenForm(true)}>
               Select Package
             </button>
+            {isOpenForm && <TopUpForm onClose={()=>setIsOpenForm(false)}/>}
           </div>
         ))}
       </div>

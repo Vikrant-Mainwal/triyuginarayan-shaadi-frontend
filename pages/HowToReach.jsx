@@ -5,7 +5,7 @@ import TravelTipsSection from "@/components/how-to-reach/TravelTipsSection";
 import React from "react";
 
 const HowToReach = () => {
-  return <div className="max-w-[1366px] w-full mx-auto ">
+  return <div className="max-w-[1400px] w-full mx-auto ">
     
     <SacredJourneySection/>
     <TempleInfoSection/>

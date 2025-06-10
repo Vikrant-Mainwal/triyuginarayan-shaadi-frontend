@@ -30,7 +30,7 @@ p, span, a, li, button {
 
 @media screen and (max-width: 768px) {
   .bg-image {
-    background-image: url('/HeroImage.jpg'); /* note the lowercase 'h' */
+    background-image: url('/hero_image_mobile.jpg'); /* note the lowercase 'h' */
     background-size: cover;
     background-position: center;
   } 

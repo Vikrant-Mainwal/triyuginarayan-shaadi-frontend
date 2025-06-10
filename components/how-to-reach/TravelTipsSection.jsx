@@ -41,12 +41,12 @@ const travelTips = [
 
 const TravelTipsSection = () => {
   return (
-    <section className="w-[90%] max-w-7xl mx-auto mt-10 p-10 text-start">
-      <h2 className="text-[28px] md:text-[50px] text-center font-semibold mb-10">
+    <section className="w-[90%] max-w-7xl mx-auto mt-25 p-10 text-start">
+      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold py-5">
         Helpful Travel <span className="text-[#A42D2B]">Tips</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
         {travelTips.map(({ icon, alt, text }, index) => (
           <article
             key={index}

@@ -5,7 +5,7 @@ import footerImage from "../../asset/images/footer.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-[#FFE4B8] p-[40px] flex flex-col gap-[50px] max-w-[1366px] w-full mx-auto text-[#000]">
+    <div className="bg-[#FFE4B8] p-[40px] flex flex-col gap-[50px] max-w-[1400px] w-full mx-auto mt-60 text-[#000]">
       
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-10 justify-between items-center">
@@ -24,7 +24,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row gap-10 justify-between items-center text-center md:text-start">
-        <div>
+        <div className="flex flex-col gap-2">
           <h3 className="text-[28px] md:text-[35px]">Contact Us</h3>
           <p>Triyuginarayan Temple, Rudraprayag, Uttarakhand.</p>
           <p>triyuginarayanweddingwork@gmail.com</p>

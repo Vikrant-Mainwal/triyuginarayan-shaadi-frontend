@@ -14,26 +14,28 @@ const Faqs = () => {
 
   return (
     <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-6 mb-10 mt-25">
-      <h2 className="text-[28px] md:text-[50px] text-center font-bold raleway">
+      <h2 className="text-[28px] md:text-[50px] text-center font-bold raleway p-6">
         Frequently <span className="text-[#A42D2B]">Asked</span> Questions
       </h2>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 ">
         {faqs.map((item, index) => (
-          <div key={index} className="border border-black rounded-lg p-4 shadow-sm">
+          <div key={index} className="border border-black rounded-lg p-4 bg-white">
             <div
               className="cursor-pointer flex justify-between items-center"
               onClick={() => toggleFaqs(index)}
               aria-expanded={openIndex === index}
             >
-              <h3 className="text-[18px] md:text-[22px] font-semibold">{item.question}</h3>
-              <Image
+              <h3 className="text-[16px] md:text-[20px] font-medium py-2">{item.question}</h3>
+              <div className="px-2">
+                <Image
                 src={openIndex === index ? Minus : Plus}
                 alt={openIndex === index ? "Collapse" : "Expand"}
                 className={`transition-transform duration-300 ${
                   openIndex === index ? "rotate-180" : ""
-                }`}
+                } w-[21px] h-[21px] `}
               />
+              </div>
             </div>
 
             <div
@@ -41,7 +43,7 @@ const Faqs = () => {
                 openIndex === index ? "max-h-[500px] mt-2 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-[16px] md:text-[18px]">{item.answer}</p>
+              <p className="text-[16px] md:text-[18px] text-gray-600">{item.answer}</p>
             </div>
           </div>
         ))}

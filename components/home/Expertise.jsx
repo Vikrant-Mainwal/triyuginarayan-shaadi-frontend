@@ -36,7 +36,7 @@ const Expertise = () => {
       
       {/* Heading */}
       <div className="flex flex-col gap-4 py-6">
-        <h2 className="text-[28px] md:text-[50px] font-bold raleway">
+        <h2 className="text-[28px] md:text-[50px] font-bold raleway py-6">
           Our <span className="text-[#A42D2B]">Expertise</span>
         </h2>
         <p className="text-[16px] md:text-[22px] open-sans">
@@ -45,13 +45,13 @@ const Expertise = () => {
       </div>
 
       {/*  Cards */}
-      <div className="flex flex-wrap justify-center gap-10 p-6 md:p-10">
+      <div className="flex flex-wrap justify-center gap-15 p-6 md:p-10 mt-5 md:mt-0">
         {expertise.map((item, index) => (
           <div
             key={index}
             className="flex flex-col gap-4 items-center w-[250px] md:w-[220px] text-center"
           >
-            <Image src={item.src} alt={item.alt} className="w-[80px] h-[80px]" />
+            <Image src={item.src} alt={item.alt} className="w-[100px] md:w-[150px]" />
             <p className="text-[16px] md:text-[18px]">{item.text}</p>
           </div>
         ))}

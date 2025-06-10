@@ -9,10 +9,12 @@ import Home from "../../asset/images/icons/round-home.svg";
 import People from "../../asset/images/icons/ion_people1.svg";
 import Location from "../../asset/images/icons/location-fill.svg";
 import Call from "../../asset/images/icons/call-filled.svg";
+import TopUpForm from "../top-up-form/TopUpForm";
 
 const Navbar = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenForm, setIsOpenForm] = useState(false);
 
   const links = [
     { name: "Home", href: "/", image: Home },
@@ -23,25 +25,26 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center px-5 md:px-10 py-5 max-w-[1366px] w-full mx-auto">
+    <nav className="flex justify-between items-center px-5 md:px-10 py-3 max-w-[1400px] w-full mx-auto sticky top-0 z-30 bg-[#FDFFF2]">
       {/* logo */}
       <div className="flex items-center justify-center">
         <Image
           src={Logo}
           alt="Large Logo"
-          className="  block h-22 lg:h-28 w-auto"
+          className="  block h-[80px]"
         />
       </div>
 
       {/* navigations for larger screen */}
-      <div className="hidden md:flex">
+      <div className={"hidden md:flex"}>
         {links.map((link, index) => (
           <Link
             key={index}
             href={link.href}
-            className={`text-[18px] font-medium mx-5 ${
-              selected === index ? "text-[#A42D2B]" : ""
-            }`}
+            className={`text-[18px] mx-9 ${
+              selected === index ? "text-[#A42D2B] font-bold" : ""
+            }`
+          }
             onClick={() => setSelected(index)}
           >
             {link.name}
@@ -73,7 +76,7 @@ const Navbar = () => {
                 <li key={index} className="my-2">
                   <Link
                     href={link.href}
-                    className={`text-[18px] hover:text-[#A42D2B] ${
+                    className={`text-[14px] ${
                       selected === index ? "text-[#A42D2B]" : ""
                     }`}
                     onClick={() => {
@@ -99,9 +102,11 @@ const Navbar = () => {
 
       {/* hamburger icon for mobile */}
 
-      <button className=" hidden lg:block lg:bg-[#FFB52C] lg:text-black lg:text-center lg:font-open-sans lg:text-lg lg:font-semibold lg:cursor-pointer lg:px-6 lg:py-3 lg:rounded-[7px]">
+      <button className=" hidden lg:block lg:bg-[#FFB52C] lg:text-black lg:text-center lg:font-open-sans lg:text-[16px] lg:font-semibold lg:cursor-pointer lg:px-6 lg:py-3 lg:rounded-[7px]" onClick={()=>setIsOpenForm(true)}>
         Plan your Wedding
       </button>
+
+      {isOpenForm && <TopUpForm onClose={()=>setIsOpenForm(false)}/>}
     </nav>
   );
 };

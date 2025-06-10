@@ -2,8 +2,8 @@ import React from 'react'
 
 const WhoWeAreSection = () => {
   return (
-    <div className="w-[90%] m-auto p-5 text-center">
-     <h2 className="text-[35px] md:text-[67px] font-bold raleway">
+    <div className="w-[90%] m-auto p-5 text-center mt-25">
+     <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">
         Who <span className="text-[#A42D2B]">we</span> are?
       </h2>
       <div className="flex flex-col gap-10">

@@ -8,8 +8,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 const TopUpForm = ({ onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-xl flex flex-col md:flex-row w-[90%] max-w-3xl shadow-lg relative overflow-hidden">
-        {/* Close button */}
+      <div className="bg-white rounded-[22px] flex flex-col md:flex-row w-[90%] max-w-3xl shadow-lg relative overflow-hidden">
         <div
           className="absolute top-4 right-4 cursor-pointer text-gray-500"
           onClick={onClose}
@@ -17,7 +16,6 @@ const TopUpForm = ({ onClose }) => {
           <IoIosCloseCircle className="w-[50px] h-[50px]" />
         </div>
 
-        {/* Left side (form) */}
         <div className="w-full md:w-1/2 p-6 md:p-10 bg-[#FFF9F4]">
           <Image src={Slogan} alt="logo" className="w-20 mb-4" />
           <div>
@@ -47,20 +45,20 @@ const TopUpForm = ({ onClose }) => {
 
               <input
                 type="date"
+                placeholder="sate"
                 className="w-full border border-gray-300 px-4 py-2 rounded"
               />
             </div>
 
             <button
               type="button"
-              className="bg-[#FFB52C] font-semibold py-2 px-6 rounded w-full"
+              className="bg-[#FFB52C] font-semibold py-4 px-6 rounded w-full mt-10 mb-5"
             >
               Plan your Wedding
             </button>
           </form>
         </div>
 
-        {/* Right side (image) */}
         <div className="hidden md:block md:w-1/2">
           <Image
             src={image}

@@ -7,14 +7,14 @@ import Jaimala from "../../asset/images/jaimala.svg";
 
 const ExperienceSection = () => {
   return (
-    <div className="w-[90%] m-auto p-10 mt-5 flex flex-col items-center gap-10 text-center">
-      <h2 className="text-[35px] md:text-[67px] font-bold raleway">What you will experience?</h2>
+    <div className="w-[90%] m-auto p-10 mt-25 flex flex-col items-center gap-10 text-center">
+      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">What you will <span className="text-[#A42D2B]">experience?</span> </h2>
       <p className="text-[16px] md:text-[18px]">
         The rituals at Triyuginarayan Temple are simple but deeply meaningful:
       </p>
 
       <div className="flex flex-col gap-10 p-5 md:p-10 m-auto">
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-14 md:gap-10  justify-center flex-wrap">
           <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
             <Image src={Pheras} alt="Pheras image" className="w-[100px] md:w-[150px]" />
             <p className="text-[16px] md:text-[18px]">
@@ -35,7 +35,7 @@ const ExperienceSection = () => {
           </div>
         </div>
 
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-14 md:gap-10 justify-center flex-wrap">
           <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
             <Image src={Dhol} alt="Dhol image" className="w-[100px] md:w-[150px]" />
             <p className="text-[16px] md:text-[18px]">

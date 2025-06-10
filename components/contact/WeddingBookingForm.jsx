@@ -43,7 +43,7 @@ const WeddingBookingForm = () => {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className="border p-2 w-full mb-4"
+              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
             />
           </div>
           <div className="flex flex-col gap-4 mb-4">
@@ -53,10 +53,10 @@ const WeddingBookingForm = () => {
             <input
               type="email"
               name="email"
-              placeholder="EMail"
+              placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="border p-2 w-full mb-4"
+              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
             />
           </div>
           <div className="flex flex-col gap-4 mb-4">
@@ -69,7 +69,7 @@ const WeddingBookingForm = () => {
               placeholder="Phone No."
               value={formData.phone}
               onChange={handleChange}
-              className="border p-2 w-full mb-4"
+             className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
             />
           </div>
         </>
@@ -87,10 +87,10 @@ const WeddingBookingForm = () => {
               id="date"
               type="date"
               name="date"
-              placeholder="date"
+              placeholder="dd/mm/yyyy"
               value={formData.date}
               onChange={handleChange}
-              className="border p-2 w-full mb-4"
+              className="border border-gray-300 h-11 w-full mb-4 rounded-[7px]"
             />
           </div>
           <div className="flex flex-col gap-4 mb-4">
@@ -103,7 +103,7 @@ const WeddingBookingForm = () => {
               placeholder="100"
               value={formData.guests}
               onChange={handleChange}
-              className="border p-2 w-full mb-4"
+              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
             />
           </div>
           <div className="flex flex-col gap-4 mb-4">
@@ -111,7 +111,7 @@ const WeddingBookingForm = () => {
               Name of the city
             </label>
             <select
-              className="w-full border border-gray-300 rounded-md p-2"
+              className="border border-gray-300 w-full h-11 mb-4 rounded-[7px]"
               id="city"
               name="city"
               value={formData.city}
@@ -122,16 +122,16 @@ const WeddingBookingForm = () => {
               <option>New Tehri</option>
             </select>
           </div>
-          <div className="flex gap-2 items-start">
+          <div className="flex gap-2 items-start py-5">
             <input
               type="checkbox"
               name="agree"
               checked={formData.agree}
               onChange={handleChange}
-              className="accent-[#A42D2B]"
+              className="accent-[#A42D2B] w-[24px] h-[24px]"
             />
-            <label htmlFor="agree" className="text-sm">
-              I'm happy to be contacted by the Tryshaadi team about my enquiry.
+            <label htmlFor="agree" className="text-[16px] font-normal open-sans">
+             <p> I'm happy to be contacted by the Try shaadi team about my enquiry.</p>
             </label>
           </div>
         </>
@@ -140,23 +140,23 @@ const WeddingBookingForm = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 mb-5">
-      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 mb-5 mt-25">
+      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">
         Book your <span className="text-[#A42D2B] font-bold">Dream</span>{" "}
         Wedding!
       </h2>
 
       {/* Desktop Form */}
-      <div className="hidden md:block max-w-[1200px] w-full rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] p-8">
+      <div className="hidden md:block max-w-[1200px] w-full rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] px-15 py-8">
         <form
           onSubmit={(e) => {
             e.preventDefault();
             handleSubmit();
           }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-10"
+          className="flex gap-10 justify-between"
         >
           <div>
-            <h3 className="text-lg font-semibold mb-4">Personal Details</h3>
+            <h3 className="text-[32px] font-semibold mb-8">Personal Details</h3>
             <div className="mb-4 flex flex-col gap-2">
               <label htmlFor="name">Name</label>
               <input
@@ -165,7 +165,7 @@ const WeddingBookingForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 type="text"
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-300 w-[400px] p-2 mb-4 rounded-[7px]"
               />
             </div>
             <div className="mb-4 flex flex-col gap-2">
@@ -176,7 +176,7 @@ const WeddingBookingForm = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 type="tel"
-                className="border border-gray-300 rounded-md p-2"
+               className="border border-gray-300 w-[400px] p-2 mb-4 rounded-[7px]"
               />
             </div>
             <div className="mb-4 flex flex-col gap-2">
@@ -187,7 +187,7 @@ const WeddingBookingForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 type="email"
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-300 w-[400px] p-2 mb-4 rounded-[7px]"
               />
             </div>
             <div className="flex gap-2 items-center">
@@ -196,9 +196,9 @@ const WeddingBookingForm = () => {
                 name="agree"
                 checked={formData.agree}
                 onChange={handleChange}
-                className="accent-[#A42D2B]"
+                className="accent-[#A42D2B] w-[20px] h-[20px]"
               />
-              <label htmlFor="agree" className="text-sm">
+              <label htmlFor="agree" className="text-[14px]">
                 I'm happy to be contacted by the Tryshaadi team about my
                 enquiry.
               </label>
@@ -206,7 +206,7 @@ const WeddingBookingForm = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Wedding Plans</h3>
+            <h3 className="text-[32px] font-semibold mb-8">Wedding Plans</h3>
             <div className="flex gap-4 mb-4">
               <div className="flex flex-col gap-2 w-[200px]">
                 <label htmlFor="date">Preferred Wedding Date</label>
@@ -216,7 +216,7 @@ const WeddingBookingForm = () => {
                   type="date"
                   value={formData.date}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-md p-2"
+                  className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
                 />
               </div>
               <div className="flex flex-col gap-2 w-[200px]">
@@ -227,7 +227,7 @@ const WeddingBookingForm = () => {
                   type="number"
                   value={formData.guests}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-md p-2"
+                  className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
                 />
               </div>
             </div>
@@ -238,7 +238,7 @@ const WeddingBookingForm = () => {
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
               >
                 <option value="">Select</option>
                 <option value="Dehradun">Dehradun</option>
@@ -249,11 +249,11 @@ const WeddingBookingForm = () => {
           </div>
         </form>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-18 mb-15">
           <button
             type="submit"
             onClick={handleSubmit}
-            className="bg-[#FFB52C] text-black font-semibold px-6 py-2 rounded-md shadow-md"
+            className="bg-[#FFB52C] text-black font-semibold px-6 py-4 rounded-md shadow-md cursor-pointer"
           >
             Start my wedding journey
           </button>
@@ -270,7 +270,7 @@ const WeddingBookingForm = () => {
             onClick={() => setStep(step - 1)}
           />
         )}
-        <h2 className="text-xl font-semibold mb-6 text-center">
+        <h2 className="text-xl font-semibold m-6 text-center ">
           {steps[step].label}
         </h2>
         <form
@@ -283,18 +283,18 @@ const WeddingBookingForm = () => {
             {steps[step].content}
           </div>
         </form>
-        <div className="flex justify-between mt-6">
+        <div className="flex justify-between mt-10">
           {step < steps.length - 1 ? (
             <button
               onClick={() => setStep(step + 1)}
-              className="px-4 py-2 bg-[#FFB52C] rounded m-auto"
+              className="w-[219px] py-4 bg-[#FFB52C] rounded m-auto mb-10"
             >
               Next
             </button>
           ) : (
             <button
               onClick={handleSubmit}
-              className="px-4 py-2 bg-[#FFB52C] rounded m-auto"
+              className="w-[219px] py-4 bg-[#FFB52C] rounded m-auto mb-10"
             >
               Start my wedding journey
             </button>

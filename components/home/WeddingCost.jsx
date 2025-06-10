@@ -1,9 +1,13 @@
-import React from 'react'
+'use client'
+import React,{useState} from 'react'
+import TopUpForm from '../top-up-form/TopUpForm';
 
 const WeddingCost = () => {
+   const [isOpenForm, setIsOpenForm] = useState(false);
+
   return (
     <div className=" w-[80%] flex flex-col gap-6 m-auto mt-25 mb-5 text-center ">
-        <h2 className="text-[28px] md:text-[50px] font-bold raleway">
+        <h2 className="text-[28px] md:text-[50px] font-bold raleway py-6">
           Triyuginarayan Temple
           <span className="text-[#A42D2B]">{"   "}Wedding Cost</span>
         </h2>
@@ -27,9 +31,13 @@ const WeddingCost = () => {
             without overwhelming expenses.
           </p>
         </div>
-        <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 m-auto text-white">
+        <div className='mt-10'>
+
+        <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 m-auto text-white cursor-pointer" onClick={()=>setIsOpenForm(true)}>
           Get my Custom Quote
         </button>
+        {isOpenForm && <TopUpForm onClose={()=>setIsOpenForm(false)}/>}
+        </div>
       </div>
   )
 }
