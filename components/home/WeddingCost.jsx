@@ -7,19 +7,19 @@ const WeddingCost = () => {
 
   return (
     <div className=" w-[80%] flex flex-col gap-6 m-auto mt-25 mb-5 text-center ">
-        <h2 className="text-[28px] md:text-[50px] font-bold raleway py-6">
+        <h2 className="text-[28px] md:text-[38px] font-bold raleway py-6">
           Triyuginarayan Temple
           <span className="text-[#A42D2B]">{"   "}Wedding Cost</span>
         </h2>
         <div>
-          <p className="text-[16px] md:text-[18px] text-justify md:text-center">
+          <p className="text-[16px] text-justify md:text-center">
             Custom quotes are available based on your guest count and
             preferences. Every couple receives complete support from our
             Triyuginarayan wedding planner team.
           </p>
         </div>
         <div>
-          <p className="text-[16px] md:text-[18px] text-justify md:text-center ">
+          <p className="text-[16px] text-justify md:text-center ">
             Planning a wedding at the sacred Triyuginarayan Temple is not only
             spiritually fulfilling but also surprisingly affordable. Whether
             you’re looking for an intimate ceremony or a complete destination
@@ -33,7 +33,7 @@ const WeddingCost = () => {
         </div>
         <div className='mt-10'>
 
-        <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 m-auto text-white cursor-pointer" onClick={()=>setIsOpenForm(true)}>
+        <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 m-auto text-white cursor-pointer text-[16px]" onClick={()=>setIsOpenForm(true)}>
           Get my Custom Quote
         </button>
         {isOpenForm && <TopUpForm onClose={()=>setIsOpenForm(false)}/>}

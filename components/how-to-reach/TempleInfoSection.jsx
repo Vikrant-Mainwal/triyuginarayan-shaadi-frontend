@@ -38,7 +38,7 @@ const TempleInfoSection = () => {
 
       {/* How to Reach Section */}
       <div className="flex flex-col gap-10 w-[80%] text-center">
-        <h2 className="text-[28px] md:text-[50px] font-semibold">How to Reach <span className="text-[#A42D2B]">Triyuginarayan Temple?</span> </h2>
+        <h2 className="text-[28px] md:text-[50px] font-bold">How to Reach <span className="text-[#A42D2B]">Triyuginarayan Temple?</span> </h2>
         <p className="text-[16px] md:text-[18px] text-justify md:text-center">
           Triyuginarayan is around 15 km from Sonprayag, a key stop on the Kedarnath route.
           It’s well connected, but the last stretch is through the mountains — peaceful and scenic.

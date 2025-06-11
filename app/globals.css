@@ -15,11 +15,19 @@ body{
   font-weight: 700;
 } */
 
-h2 ,span{
-  font-family: "Raleway", sans-serif;
+h1{
+  font-family: "Raleway" , sans-serif;
+  font-size: 52px;
+  line-height: 1.25;
 }
-p, a, li, button, h3, h4, h5, h6 {
+
+h2{
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+}
+p, a, li, button {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 .bg-image {
@@ -28,12 +36,26 @@ p, a, li, button, h3, h4, h5, h6 {
   background-position: center;
 }
 
+.slick-prev:before,
+  .slick-next:before {
+    color: #000 !important; /* Black arrow color */
+    font-size: 30px;         /* Make it larger if needed */
+  }
+
 @media screen and (max-width: 768px) {
   .bg-image {
     background-image: url('/hero_image_mobile.jpg'); /* note the lowercase 'h' */
     background-size: cover;
     background-position: center;
   } 
+  h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+  }
+  h2{
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+}
 }
 
 

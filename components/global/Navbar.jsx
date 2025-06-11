@@ -10,9 +10,10 @@ import People from "../../asset/images/icons/ion_people1.svg";
 import Location from "../../asset/images/icons/location-fill.svg";
 import Call from "../../asset/images/icons/call-filled.svg";
 import TopUpForm from "../top-up-form/TopUpForm";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const [selected, setSelected] = useState(0);
+  const pathName = usePathname()
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenForm, setIsOpenForm] = useState(false);
 
@@ -27,25 +28,25 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-5 md:px-10 py-3 max-w-[1400px] w-full mx-auto sticky top-0 z-30 bg-[#FDFFF2]">
       {/* logo */}
-      <div className="flex items-center justify-center">
+      <div className="flex items-center ">
         <Image
           src={Logo}
           alt="Large Logo"
-          className="  block h-[80px]"
+          className="h-[80px]"
         />
       </div>
 
       {/* navigations for larger screen */}
-      <div className={"hidden md:flex"}>
+      <div className={"hidden md:flex space-x-20"}>
         {links.map((link, index) => (
           <Link
             key={index}
             href={link.href}
-            className={`text-[18px] mx-9 ${
-              selected === index ? "text-[#A42D2B] font-bold" : ""
+            className={`text-[18px] ${
+              pathName === link.href ? "text-[#A42D2B] font-bold" : ""
             }`
           }
-            onClick={() => setSelected(index)}
+           
           >
             {link.name}
           </Link>
@@ -64,23 +65,22 @@ const Navbar = () => {
       {/* dropdown menu for mobile */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/50 z-10 top-0 right-0 md:hidden  ">
-          <div className="absolute top-0 right-0 bg-white shadow-lg w-[250px] h-screen z-20 py-10 transition-all duration-3500 ease-in-out">
-            <div className=" p-4">
+          <div className="absolute top-0 right-0 bg-white w-[250px] h-full z-20 py-10 transition-all duration-3500">
+            <div className="p-4">
               <IoMdClose
                 className="text-[30px] cursor-pointer"
                 onClick={() => setIsOpen(false)}
               />
             </div>
-            <ul className="flex flex-col p-5 pt-0">
+            <ul className="flex flex-col p-5">
               {links.map((link, index) => (
                 <li key={index} className="my-2">
                   <Link
                     href={link.href}
-                    className={`text-[14px] ${
-                      selected === index ? "text-[#A42D2B]" : ""
+                    className={`text-[14px] flex items-center  ${
+                      pathName === link.href ? "text-[#A42D2B]" : ""
                     }`}
                     onClick={() => {
-                      setSelected(index);
                       setIsOpen(false);
                     }}
                   >
@@ -102,7 +102,7 @@ const Navbar = () => {
 
       {/* hamburger icon for mobile */}
 
-      <button className=" hidden lg:block lg:bg-[#FFB52C] lg:text-black lg:text-center lg:font-open-sans lg:text-[16px] lg:font-semibold lg:cursor-pointer lg:px-6 lg:py-3 lg:rounded-[7px]" onClick={()=>setIsOpenForm(true)}>
+      <button className=" hidden lg:block lg:bg-[#FFB52C] lg:text-black lg:text-center lg:open-sans lg:text-[16px] lg:font-semibold lg:cursor-pointer lg:px-6 lg:py-3 lg:rounded-[7px]" onClick={()=>setIsOpenForm(true)}>
         Plan your Wedding
       </button>
 

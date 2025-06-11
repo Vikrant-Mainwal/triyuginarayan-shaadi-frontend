@@ -6,10 +6,10 @@ const AboutSection = () => {
   return (
     <div className="flex flex-col md:flex-row w-[90%] m-auto mt-10 gap-5">
       <div className="md:w-[60%] flex flex-col gap-4 text-center md:text-start items-center md:items-start">
-        <h2 className="text-[35px] md:text-[52px] font-bold raleway">
+        <h1 className="text-[35px] md:text-[52px] font-bold raleway">
           “Where <span className="text-[#A42D2B]">Every</span> Wedding Begins
           with a <span className="text-[#A42D2B]">Blessing”</span>
-        </h2>
+        </h1>
 
         <div className='flex flex-col gap-5 mt-5'>
           <p className="text-[16px] md:text-[18px] text-justify md:text-start">

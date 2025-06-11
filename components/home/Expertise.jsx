@@ -36,11 +36,11 @@ const Expertise = () => {
       
       {/* Heading */}
       <div className="flex flex-col gap-4 py-6">
-        <h2 className="text-[28px] md:text-[50px] font-bold raleway py-6">
+        <h2 className="text-[28px] md:text-[38px] font-bold raleway py-6">
           Our <span className="text-[#A42D2B]">Expertise</span>
         </h2>
-        <p className="text-[16px] md:text-[22px] open-sans">
-          We’re not just planners — we’re storytellers of a sacred beginning.
+        <p className="text-[16px] open-sans">
+          We’re not just planners — we’re <span className="">storytellers</span>  of a sacred beginning.
         </p>
       </div>
 
@@ -51,8 +51,8 @@ const Expertise = () => {
             key={index}
             className="flex flex-col gap-4 items-center w-[250px] md:w-[220px] text-center"
           >
-            <Image src={item.src} alt={item.alt} className="w-[100px] md:w-[150px]" />
-            <p className="text-[16px] md:text-[18px]">{item.text}</p>
+            <Image src={item.src} alt={item.alt} className="w-[100px]" />
+            <p className="text-[16px]">{item.text}</p>
           </div>
         ))}
       </div>

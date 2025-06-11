@@ -131,7 +131,7 @@ const WeddingBookingForm = () => {
               className="accent-[#A42D2B] w-[24px] h-[24px]"
             />
             <label htmlFor="agree" className="text-[16px] font-normal open-sans">
-             <p> I'm happy to be contacted by the Try shaadi team about my enquiry.</p>
+             <p> I'm happy to be contacted by the Triyuginarayan Shaadi team about my enquiry.</p>
             </label>
           </div>
         </>
@@ -199,7 +199,7 @@ const WeddingBookingForm = () => {
                 className="accent-[#A42D2B] w-[20px] h-[20px]"
               />
               <label htmlFor="agree" className="text-[14px]">
-                I'm happy to be contacted by the Tryshaadi team about my
+                I'm happy to be contacted by the Triyuginarayan Shaadi team about my
                 enquiry.
               </label>
             </div>

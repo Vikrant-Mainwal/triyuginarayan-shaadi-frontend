@@ -19,13 +19,13 @@ const Plans = () => {
           <Image src={Triyuginarayan} alt="image" />
         </div>
 
-        <h2 className="text-[28px] md:text-[50px] font-bold py-6">
+        <h2 className="text-[28px] md:text-[38px] font-bold py-6">
           {" "}
           <span> Our </span>{" "}
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
         </h2>
 
-        <p className="text-[16px] md:text-[18px] text-justify md:text-center open-sans px-6">
+        <p className="text-[16px] text-justify md:text-center open-sans px-6">
           We offer two thoughtfully crafted wedding packages designed to fit
           different visions and budgets. Both ensure an authentic Triyuginarayan
           destination wedding experience.
@@ -41,7 +41,7 @@ const Plans = () => {
             }`}
           >
             <div className="flex flex-col items-center gap-4 mt-10">
-              <h3 className="text-[26px] md:text-[45px] font-bold">{item.title}</h3>
+              <h3 className="text-[28px] md:text-[38px] font-bold">{item.title}</h3>
               <p className="text-[14px] md:text-[18px] text-center p-[12px]">
                 {item.description}
               </p>

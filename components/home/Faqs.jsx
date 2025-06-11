@@ -14,7 +14,7 @@ const Faqs = () => {
 
   return (
     <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-6 mb-10 mt-25">
-      <h2 className="text-[28px] md:text-[50px] text-center font-bold raleway p-6">
+      <h2 className="text-[28px] md:text-[38px] text-center font-bold raleway p-6">
         Frequently <span className="text-[#A42D2B]">Asked</span> Questions
       </h2>
 
@@ -26,7 +26,7 @@ const Faqs = () => {
               onClick={() => toggleFaqs(index)}
               aria-expanded={openIndex === index}
             >
-              <h3 className="text-[16px] md:text-[20px] font-medium py-2">{item.question}</h3>
+              <h3 className="text-[16px] font-medium py-2">{item.question}</h3>
               <div className="px-2">
                 <Image
                 src={openIndex === index ? Minus : Plus}
@@ -43,7 +43,7 @@ const Faqs = () => {
                 openIndex === index ? "max-h-[500px] mt-2 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-[16px] md:text-[18px] text-gray-600">{item.answer}</p>
+              <p className="text-[16px] text-gray-600">{item.answer}</p>
             </div>
           </div>
         ))}

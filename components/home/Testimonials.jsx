@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <div>
       <div className="w-[90%] m-auto mt-25 mb-5">
-        <h2 className="text-center text-[28px] md:text-[50px] raleway font-bold py-6">
+        <h2 className="text-center text-[28px] md:text-[38px] raleway font-bold py-6">
           What <span className="text-[#A42D2B]">Couples</span> Are Saying
         </h2>
         {/* <div className="flex justify-center items-center">
@@ -25,7 +25,7 @@ const Testimonials = () => {
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6 ">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
+              <p className="open-sans italic px-6 text-[16px]">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
               <div>
                 <p>rating</p>
                 <p>Senha and varun</p>
@@ -44,7 +44,7 @@ const Testimonials = () => {
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6 ">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
+              <p className="open-sans italic px-6 text-[16px] ">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
               <div>
                 <p>rating</p>
                 <p>Senha and varun</p>
@@ -63,11 +63,11 @@ const Testimonials = () => {
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6 ">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
+              <p className="open-sans italic px-6 text-[16px]">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
               <div>
-                <p>rating</p>
-                <p>Senha and varun</p>
-                <p>Mumbai,India</p>
+                <p className="text-[16px]">rating</p>
+                <p className="text-[16px]">Senha and varun</p>
+                <p className="text-[16px]">Mumbai,India</p>
               </div>
             </div>
           </div>

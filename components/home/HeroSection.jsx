@@ -20,10 +20,10 @@ const HeroSection = () => {
             Wedding at{" "}
             <span className="text-[#FFE4B8]">Triyuginarayan</span>
           </h2>
-          <h4 className="text-white text-[24px] md:text-[42px] open-sans font-semibold">
+          <h4 className="text-white text-[24px] md:text-[35px] open-sans font-semibold">
             Where Divine Love Began
           </h4>
-          <p className="text-white w-[300px] md:w-full m-auto md:m-0 text-[16px] md:text-[18px] leading-relaxed font-open-sans">
+          <p className="text-white w-[300px] md:w-full m-auto md:m-0 text-[16px] leading-relaxed font-open-sans">
             Host your wedding where Lord Shiva and Goddess Parvati united in
             sacred vows. <br />A serene Himalayan setting for couples
             seeking a soulful start.
@@ -31,7 +31,7 @@ const HeroSection = () => {
         </div>
 
         <button
-          className="bg-[#FFB52C] text-black text-[16px] md:text-[18px] font-semibold cursor-pointer 
+          className="bg-[#FFB52C] text-black text-[16px] font-semibold cursor-pointer 
                      px-6 py-4  rounded-lg w-fit mx-auto md:mx-0 font-open-sans"
           onClick={() => setIsOpen(true)}
         >

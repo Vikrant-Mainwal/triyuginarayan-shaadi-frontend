@@ -9,11 +9,11 @@ const SacredJourneySection = () => {
       </div>
 
       <div className='text-center md:text-start px-5 flex flex-col gap-10'>
-        <h2 className="text-[35px] md:text-[52px] leading-tight font-bold">
+        <h1 className="text-[35px] md:text-[52px] leading-tight font-bold">
           “Your <span className="text-[#A42D2B]">Journey</span> to a{" "}
           <span className="text-[#A42D2B]">Sacred</span> Beginning”
-        </h2>
-        <div className="flex flex-col gap-5 mt-5 text-[16px] md:text-[18px] text-justify md:text-start">
+        </h1>
+        <div className="flex flex-col gap-5 mt-3 text-justify md:text-start">
           <p>
             Planning your wedding at Triyuginarayan Temple means beginning your married life
             with blessings, peace, and nature all around you. Located in the hills of Rudraprayag, Uttarakhand,
