@@ -11,14 +11,14 @@ const TempleInfoSection = () => {
         <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">
           Why this place is so <span className="text-[#A42D2B]">Special</span>?
         </h2>
-        <div className="flex flex-col gap-6 text-[1.125rem] leading-relaxed">
-          <p className="text-[16px] md:text-[18px] text-justify md:text-center">
+        <div className="flex flex-col gap-6 leading-relaxed">
+          <p className="text-justify md:text-center">
             Triyuginarayan Temple isn’t just a wedding venue — it’s a divine location. According to mythology,
             this is where Lord Shiva and Parvati were married, and Lord Vishnu stood witness to their union.
             The temple’s eternal fire, called the Akhand Dhuni, still burns to this day.
             That’s why couples come from all over — to begin their forever where sacred love once started.
           </p>
-          <p className="text-[16px] md:text-[18px] text-justify md:text-center">
+          <p className="text-justify md:text-center">
             Triyuginarayan Temple isn’t just a wedding venue — it’s a divine location. According to mythology,
             this is where Lord Shiva and Parvati were married, and Lord Vishnu stood witness to their union.
             The temple’s eternal fire, called the Akhand Dhuni, still burns to this day.
@@ -38,8 +38,8 @@ const TempleInfoSection = () => {
 
       {/* How to Reach Section */}
       <div className="flex flex-col gap-10 w-[80%] text-center">
-        <h2 className="text-[28px] md:text-[50px] font-bold">How to Reach <span className="text-[#A42D2B]">Triyuginarayan Temple?</span> </h2>
-        <p className="text-[16px] md:text-[18px] text-justify md:text-center">
+        <h2>How to Reach <span className="text-[#A42D2B]">Triyuginarayan Temple?</span> </h2>
+        <p className="text-justify md:text-center">
           Triyuginarayan is around 15 km from Sonprayag, a key stop on the Kedarnath route.
           It’s well connected, but the last stretch is through the mountains — peaceful and scenic.
         </p>

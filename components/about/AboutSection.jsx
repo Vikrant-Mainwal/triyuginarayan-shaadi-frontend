@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from "next/image";
-import Temple from "../../asset/images/temple.svg";
+import Temple from "../../asset/images/temple.png";
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col md:flex-row w-[90%] m-auto mt-10 gap-5">
-      <div className="md:w-[60%] flex flex-col gap-4 text-center md:text-start items-center md:items-start">
-        <h1 className="text-[35px] md:text-[52px] font-bold raleway">
+    <div className="flex flex-col md:flex-row w-[90%] m-auto mt-10 gap-10">
+      <div className="md:w-[50%] flex flex-col gap-4 text-center md:text-start items-center md:items-start px-5">
+        <h1>
           “Where <span className="text-[#A42D2B]">Every</span> Wedding Begins
           with a <span className="text-[#A42D2B]">Blessing”</span>
         </h1>
@@ -27,7 +27,7 @@ const AboutSection = () => {
         
       </div>
       <div>
-        <Image src={Temple} alt="image" />
+        <Image src={Temple} alt="image" className='w-[500px]' />
       </div>
     </div>
   );

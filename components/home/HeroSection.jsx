@@ -16,16 +16,16 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col gap-5 mt-10  ">
-          <h2 className="text-white text-[35px] md:text-[52px] pt-6 font-bold leading-12">
+          <h1 className="text-white pt-6 font-bold leading-12">
             Wedding at{" "}
             <span className="text-[#FFE4B8]">Triyuginarayan</span>
-          </h2>
+          </h1>
           <h4 className="text-white text-[24px] md:text-[35px] open-sans font-semibold">
             Where Divine Love Began
           </h4>
           <p className="text-white w-[300px] md:w-full m-auto md:m-0 text-[16px] leading-relaxed font-open-sans">
             Host your wedding where Lord Shiva and Goddess Parvati united in
-            sacred vows. <br />A serene Himalayan setting for couples
+            sacred vows.A serene Himalayan setting for couples
             seeking a soulful start.
           </p>
         </div>

@@ -5,7 +5,7 @@ const WhatWeDoSection = () => {
         <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">
           What we <span className="text-[#A42D2B]">do</span> for you?
         </h2>
-        <p className="text-[16px] md:text-[18px] text-justify md:text-center p-5">
+        <p className="text-[16px] md:text-[18px] text-justify md:text-center px-5">
           At TriyuginarayanShaadi.com, we make your wedding simple, soulful, and
           fully taken care of. From rituals to hospitality, every detail is
           planned with love — so you can focus on the moments that matter.
@@ -14,7 +14,7 @@ const WhatWeDoSection = () => {
 
       <div className="flex flex-col gap-15 p-5 text-center m-auto">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[22px] md:text-[32px] font-bold">Sacred ceremonies</h2>
+          <h3 className="text-[22px] md:text-[32px] font-bold">Sacred ceremonies</h3>
           <p className="text-[16px] md:text-[18px] text-justify md:text-center">
             Your sacred union is officiated with heartfelt wedding rituals led
             by an experienced local temple priest, including a traditional Havan
@@ -26,7 +26,7 @@ const WhatWeDoSection = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-[22px] md:text-[32px] font-bold">Stay & Hospitality</h2>
+          <h3 className="text-[22px] md:text-[32px] font-bold">Stay & Hospitality</h3>
           <p className="text-[16px] md:text-[18px] text-justify md:text-center">
             We provide comfortable local accommodation for up to 30 guests,
             ensuring everyone feels at home. Alongside this, enjoy delicious
@@ -38,7 +38,7 @@ const WhatWeDoSection = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-[22px] md:text-[32px] font-bold">Memories & Moments</h2>
+          <h3 className="text-[22px] md:text-[32px] font-bold">Memories & Moments</h3>
           <p className="text-[16px] md:text-[18px] text-justify md:text-center">
             Cherish your memories with 5 beautifully crafted wedding reels and a
             framed photo of the couple with the iconic Triyuginarayan Temple in
@@ -47,7 +47,7 @@ const WhatWeDoSection = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-[22px] md:text-[32px] font-bold">Planning & Support</h2>
+          <h3 className="text-[22px] md:text-[32px] font-bold">Planning & Support</h3>
           <p className="text-[16px] md:text-[18px] text-justify md:text-center">
             We offer assistance with transportation from nearby cities or
             Dehradun, along with flexible planning for rituals, décor, meals,

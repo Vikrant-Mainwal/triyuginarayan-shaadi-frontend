@@ -8,43 +8,57 @@ import Jaimala from "../../asset/images/jaimala.svg";
 const ExperienceSection = () => {
   return (
     <div className="w-[90%] m-auto p-10 mt-25 flex flex-col items-center gap-10 text-center">
-      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">What you will <span className="text-[#A42D2B]">experience?</span> </h2>
-      <p className="text-[16px] md:text-[18px]">
+      <h2 className="text-[35px] md:text-[52px] text-center raleway font-bold">
+        What you will <span className="text-[#A42D2B]">experience?</span>{" "}
+      </h2>
+      <p>
         The rituals at Triyuginarayan Temple are simple but deeply meaningful:
       </p>
 
       <div className="flex flex-col gap-10 p-5 md:p-10 m-auto">
         <div className="flex gap-14 md:gap-10  justify-center flex-wrap">
-          <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
-            <Image src={Pheras} alt="Pheras image" className="w-[100px] md:w-[150px]" />
-            <p className="text-[16px] md:text-[18px]">
-              Pheras around the same fire where Shiva-Parvati got married
-            </p>
+          <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
+            <Image
+              src={Pheras}
+              alt="Pheras image"
+              className="w-[100px]"
+            />
+            <p>Pheras around the same fire where Shiva-Parvati got married</p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
-            <Image src={Havan} alt="Havan image" className="w-[100px] md:w-[150px]" />
-            <p className="text-[16px] md:text-[18px]">
-              Havan (sacred fire ceremony) with holy chants
-            </p>
+          <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
+            <Image
+              src={Havan}
+              alt="Havan image"
+              className="w-[100px]"
+            />
+            <p>Havan (sacred fire ceremony) with holy chants</p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
-            <Image src={Geet} alt="Geet image" className="w-[100px] md:w-[150px]" />
-            <p className="text-[16px] md:text-[18px]">
-              Mangal Geet – local songs that bless the bride and groom
-            </p>
+          <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
+            <Image
+              src={Geet}
+              alt="Geet image"
+              className="w-[100px]"
+            />
+            <p>Mangal Geet – local songs that bless the bride and groom</p>
           </div>
         </div>
 
         <div className="flex gap-14 md:gap-10 justify-center flex-wrap">
-          <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
-            <Image src={Dhol} alt="Dhol image" className="w-[100px] md:w-[150px]" />
-            <p className="text-[16px] md:text-[18px]">
-              Dhol–Damau music to celebrate your love
-            </p>
+          <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
+            <Image
+              src={Dhol}
+              alt="Dhol image"
+              className="w-[100px]"
+            />
+            <p>Dhol–Damau music to celebrate your love</p>
           </div>
-          <div className="flex flex-col gap-2 justify-center items-center w-[200px] md:w-[300px]">
-            <Image src={Jaimala} alt="Jaimala image" className="w-[100px] md:w-[150px]" />
-            <p className="text-[16px] md:text-[18px]">
+          <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
+            <Image
+              src={Jaimala}
+              alt="Jaimala image"
+              className="w-[100px]"
+            />
+            <p>
               Traditional rituals like Jaimala and Tilak, all guided by
               experienced priests
             </p>

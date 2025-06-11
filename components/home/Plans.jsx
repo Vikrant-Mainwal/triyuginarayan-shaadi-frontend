@@ -42,7 +42,7 @@ const Plans = () => {
           >
             <div className="flex flex-col items-center gap-4 mt-10">
               <h3 className="text-[28px] md:text-[38px] font-bold">{item.title}</h3>
-              <p className="text-[14px] md:text-[18px] text-center p-[12px]">
+              <p className="text-center p-[12px] font-bold text-gray-700">
                 {item.description}
               </p>
               <h3 className="text-[48px] md:text-[67px] text-[#A42D2B] font-bold">
