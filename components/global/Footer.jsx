@@ -9,7 +9,7 @@ const Footer = () => {
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-10 justify-between items-center">
         <div className="w-full md:w-[50%] flex flex-col gap-4">
-          <h2 className="leading-tight">
+          <h2 className="text-center md:text-start">
             Begin Your <br /> <span className="text-[#A42D2B]">Journey</span> With Us
           </h2>
           <p className="text-[16px] md:text-[18px] text-justify md:text-start">
@@ -17,11 +17,11 @@ const Footer = () => {
             that’s deeply meaningful, beautifully organized, and forever remembered.
           </p>
         </div>
-        <div className="flex flex-col gap-2">
-          <h2 className="text-[28px] md:text-[35px]">Contact Us</h2>
-          <p>Triyuginarayan Temple, Rudraprayag, Uttarakhand.</p>
-          <p>triyuginarayanweddingwork@gmail.com</p>
-          <p>+91-xxx-xxxxx</p>
+        <div className="flex flex-col gap-2 text-center md:text-start ">
+          <h2 >Contact Us</h2>
+          <p className="text-[#656565] !text-[14px]">Triyuginarayan Temple, Rudraprayag, Uttarakhand.</p>
+          <p className="text-[#656565] !text-[14px]">triyuginarayanweddingwork@gmail.com</p>
+          <p className="text-[#656565] !text-[14px]">+91-xxx-xxxxx</p>
         </div>
       </div>
 

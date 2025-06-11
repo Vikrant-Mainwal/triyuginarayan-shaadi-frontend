@@ -43,7 +43,7 @@ const Faqs = () => {
                 openIndex === index ? "max-h-[500px] mt-2 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-[16px] text-gray-600">{item.answer}</p>
+              <p className="text-gray-600">{item.answer}</p>
             </div>
           </div>
         ))}

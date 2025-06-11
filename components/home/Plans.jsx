@@ -19,7 +19,7 @@ const Plans = () => {
           <Image src={Triyuginarayan} alt="image" />
         </div>
 
-        <h2 className="text-[28px] md:text-[38px] font-bold py-6">
+        <h2 className="py-6">
           {" "}
           <span> Our </span>{" "}
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
@@ -42,10 +42,10 @@ const Plans = () => {
           >
             <div className="flex flex-col items-center gap-4 mt-10">
               <h3 className="text-[28px] md:text-[38px] font-bold">{item.title}</h3>
-              <p className="text-center p-[12px] font-bold text-gray-700">
+              <p className="text-center p-[12px] font-bold text-[#656565]">
                 {item.description}
               </p>
-              <h3 className="text-[48px] md:text-[67px] text-[#A42D2B] font-bold">
+              <h3 className="text-[#A42D2B] !open-sans !md:text-[67px] !text-[48px] !font-bold">
                 {item.price}
               </h3>
               <div className="flex gap-5">
@@ -73,7 +73,7 @@ const Plans = () => {
                           alt="image"
                           className="w-[27px] md:w-[30px]"
                         />
-                        <li className="text-[12px] md:text-[16px]">
+                        <li className="">
                           {feature}
                         </li>
                       </div>

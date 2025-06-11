@@ -141,7 +141,7 @@ const WeddingBookingForm = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 mb-5 mt-25">
-      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">
+      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold px-5">
         Book your <span className="text-[#A42D2B] font-bold">Dream</span>{" "}
         Wedding!
       </h2>

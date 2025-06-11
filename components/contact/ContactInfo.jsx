@@ -12,11 +12,11 @@ const ContactInfo = () => {
       <div className="hidden md:block">
         <Image src={ContactImage} alt="image" className=" md:w-[500px]" />
       </div>
-      <div className="flex flex-col gap-5">
-        <h2 className="text-[28px] md:text-[50px] font-bold raleway py-6">
+      <div className="flex flex-col gap-5 text-center md:text-start">
+        <h2 className="py-6">
           Want to <span className="text-[#A42D2B]">talk</span> right away ?
         </h2>
-        <p className="text-[16px] md:text-[18px]">
+        <p className="text-justify md:text-start">
           Sometimes, speaking to someone directly feels easier — we completely
           understand.
         </p>
