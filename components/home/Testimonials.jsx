@@ -14,18 +14,18 @@ const Testimonials = () => {
           <Image src={Testimonial} alt="image" />
         </div> */}
 
-        <div className="hidden relative md:flex items-center justify-center mt-10 h-[600px]">
-          <div className="absolute top-[100px] left-[100px]">
-          <div className="relative w-[500px] h-[300px] bg-[#FFFFFF] shadow-2xl shadow-[0px 4px 40px 0px rgba(0, 0, 0, 0.10)]">
+        <div className="relative md:flex items-center justify-center mt-10 h-[900px] md:h-[600px] p-5 md:p-0">
+          <div className="absolute md:top-[100px] md:left-[170px] rotate-6 md:rotate-0 z-10 md:z-0">
+          <div className="relative w-full max-w-md md:w-[500px] md:h-[300px] bg-[#FFFFFF] shadow-2xl shadow-[0px 4px 40px 0px rgba(0, 0, 0, 0.10)]">
             <div className=" absolute top-[-20px] left-[-30px]">
               <Image src={Comma} alt="quotation marks"/>
             </div>
 
-            <div className="flex flex-col gap-5 p-6 items-center justify-center text-center">
+            <div className="flex flex-col gap-3 md:gap-5 p-6 items-center justify-center text-center">
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6 text-[16px]">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
+              <p className="open-sans italic px-6">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
               <div>
                 <p>rating</p>
                 <p>Senha and varun</p>
@@ -34,13 +34,13 @@ const Testimonials = () => {
             </div>
           </div>
           </div>
-          <div className="absolute top-[35px] right-[150px]">
-          <div className="relative w-[500px] h-[300px] bg-[#FFFFFF] shadow-2xl shadow-[0px 4px 40px 0px rgba(0, 0, 0, 0.10)] ">
+          <div className="absolute top-[290px] -rotate-4 md:rotate-0 md:top-[35px] md:right-[150px]">
+          <div className="relative w-full max-w-md md:w-[500px] h-[300px] bg-[#FFFFFF] shadow-2xl shadow-[0px 4px 40px 0px rgba(0, 0, 0, 0.10)] ">
             <div className=" absolute top-[-20px] left-[-30px]">
               <Image src={Comma} alt="quotation marks"/>
             </div>
 
-            <div className="flex flex-col gap-5 p-6 items-center justify-center text-center">
+            <div className="flex flex-col gap-3 md:gap-5 p-6 items-center justify-center text-center">
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
@@ -53,8 +53,8 @@ const Testimonials = () => {
             </div>
           </div>
           </div>
-          <div className="absolute top-[340px] right-[200px] z-[10px]">
-          <div className="relative w-[500px] h-[300px] bg-[#FFFFFF] shadow-2xl shadow-[0px 4px 40px 0px rgba(0, 0, 0, 0.10)] ">
+          <div className="absolute top-[590px] md:top-[340px] md:right-[200px] z-[10px]">
+          <div className="relative w-full max-w-md md:w-[500px] h-[300px] bg-[#FFFFFF] shadow-2xl shadow-[0px 4px 40px 0px rgba(0, 0, 0, 0.10)] ">
             <div className=" absolute top-[-20px] left-[-30px]">
               <Image src={Comma} alt="quotation marks"/>
             </div>
