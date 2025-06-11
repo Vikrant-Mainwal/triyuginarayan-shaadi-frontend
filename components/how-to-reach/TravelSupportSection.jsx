@@ -1,6 +1,6 @@
 const TravelSupportSection = () => {
   return (
-    <section className="w-[90%] max-w-5xl mx-auto mt-25 p-10 text-start">
+    <section className="w-[90%] max-w-5xl mx-auto mt-25 text-start">
       {/* Heading and Intro */}
       <div className="flex flex-col text-center mb-14 gap-4">
         <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold">

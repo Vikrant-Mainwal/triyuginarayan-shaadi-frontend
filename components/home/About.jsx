@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import Mandir from "../../asset/images/about-us-image.svg";
+import Mandir from "../../asset/images/about-section.png";
 import Link from "next/link";
 
 const About = () => {

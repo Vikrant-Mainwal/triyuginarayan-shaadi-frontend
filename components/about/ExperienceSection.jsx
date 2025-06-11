@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Pheras from "../../asset/images/pheras.svg";
-import Havan from "../../asset/images/havan.svg";
-import Geet from "../../asset/images/mangal-geet.svg";
-import Dhol from "../../asset/images/dhol.svg";
-import Jaimala from "../../asset/images/jaimala.svg";
+import Pheras from "../../asset/images/badges/pheras.svg";
+import Havan from "../../asset/images/badges/havan.svg";
+import Geet from "../../asset/images/badges/mangal-geet.svg";
+import Dhol from "../../asset/images/badges/dhol.svg";
+import Jaimala from "../../asset/images/badges/jaimala.svg";
 
 const ExperienceSection = () => {
   return (

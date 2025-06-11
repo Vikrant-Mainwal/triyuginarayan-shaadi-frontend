@@ -1,10 +1,10 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
-import Triyuginarayan from "../../asset/images/triyuginarayan.svg";
-import Tick from "../../asset/images/tick.svg";
-import Pepicons from "../../asset/images/people-icon.svg";
-import Calender from "../../asset/images/calender.svg";
+import Triyuginarayan from "../../asset/images/logo/logo.svg";
+import Tick from "../../asset/images/others/tick.svg";
+import Pepicons from "../../asset/images/others/people-icon.svg";
+import Calender from "../../asset/images/others/calender.svg";
 import packageData from "../../asset/plan.json";
 import TopUpForm from "../top-up-form/TopUpForm";
 

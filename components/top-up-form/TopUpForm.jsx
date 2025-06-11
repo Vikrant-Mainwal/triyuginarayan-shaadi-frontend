@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import image from "../../asset/images/top-up.svg";
-import Slogan from "../../asset/images/logo-slogan.svg";
+import image from "../../asset/images/wedding-hand.png";
+import Slogan from "../../asset/images/logo/logo-slogan.svg";
 import BookWedding from "../../asset/images/book-wedding.svg";
 import { IoIosCloseCircle } from "react-icons/io";
 

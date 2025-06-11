@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import MarriedCouple from "../../asset/images/married-couple-image.png";
-import Ellipse from "../../asset/images/Ellipse.svg";
+import Ellipse from "../../asset/images/others/Ellipse.svg";
 
 const WhyChoose = () => {
   return (

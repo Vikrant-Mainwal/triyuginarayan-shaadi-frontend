@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import backicon from "../../asset/images/back-button.svg";
+import backicon from "../../asset/images/others/back-button.svg";
 
 const WeddingBookingForm = () => {
   const [formData, setFormData] = useState({
@@ -147,7 +147,7 @@ const WeddingBookingForm = () => {
       </h2>
 
       {/* Desktop Form */}
-      <div className="hidden md:block max-w-[1200px] w-full rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] px-15 py-8">
+      <div className="hidden md:block max-w-[1200px] h-[600px] w-full rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] px-15 py-8 bg-[url(/mandala.png)] bg-center bg-cover">
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -157,7 +157,7 @@ const WeddingBookingForm = () => {
         >
           <div>
             <h3 className="text-[32px] font-semibold mb-8">Personal Details</h3>
-            <div className="mb-4 flex flex-col gap-2">
+            <div className=" flex flex-col gap-1">
               <label htmlFor="name">Name</label>
               <input
                 id="name"
@@ -168,7 +168,7 @@ const WeddingBookingForm = () => {
                 className="border border-gray-300 w-[400px] p-2 mb-4 rounded-[7px]"
               />
             </div>
-            <div className="mb-4 flex flex-col gap-2">
+            <div className=" flex flex-col gap-1">
               <label htmlFor="phone">Phone No.</label>
               <input
                 id="phone"
@@ -179,7 +179,7 @@ const WeddingBookingForm = () => {
                className="border border-gray-300 w-[400px] p-2 mb-4 rounded-[7px]"
               />
             </div>
-            <div className="mb-4 flex flex-col gap-2">
+            <div className="mb-4 flex flex-col gap-1">
               <label htmlFor="email">Email Address</label>
               <input
                 id="email"
@@ -207,7 +207,7 @@ const WeddingBookingForm = () => {
 
           <div>
             <h3 className="text-[32px] font-semibold mb-8">Wedding Plans</h3>
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-4 ">
               <div className="flex flex-col gap-2 w-[200px]">
                 <label htmlFor="date">Preferred Wedding Date</label>
                 <input
@@ -219,7 +219,7 @@ const WeddingBookingForm = () => {
                   className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
                 />
               </div>
-              <div className="flex flex-col gap-2 w-[200px]">
+              <div className="flex flex-col gap-1 w-[200px]">
                 <label htmlFor="guests">No. of guests</label>
                 <input
                   id="guests"
@@ -231,7 +231,7 @@ const WeddingBookingForm = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-2 w-[250px]">
+            <div className="flex flex-col gap-1 w-[250px]">
               <label htmlFor="city">City</label>
               <select
                 id="city"
@@ -249,7 +249,7 @@ const WeddingBookingForm = () => {
           </div>
         </form>
 
-        <div className="text-center mt-18 mb-15">
+        <div className="text-center mt-15 mb-10">
           <button
             type="submit"
             onClick={handleSubmit}

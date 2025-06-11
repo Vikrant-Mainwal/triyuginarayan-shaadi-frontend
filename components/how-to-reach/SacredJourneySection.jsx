@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import imageSrc from '../../asset/images/shivparvati.svg';
+import imageSrc from '../../asset/images/shivparvati.png';
 
 const SacredJourneySection = () => {
   return (

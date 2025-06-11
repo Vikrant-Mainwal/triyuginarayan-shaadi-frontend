@@ -1,10 +1,10 @@
 import Image from "next/image";
-import VehicleIcon from "../../asset/images/icons/vehicleIcon.svg";
-import CompassIcon from "../../asset/images/icons/compass-icon.svg";
-import IdIcon from "../../asset/images/icons/id-icon.svg";
-import NetworkIcon from "../../asset/images/icons/network-icon.svg";
-import StopIcon from "../../asset/images/icons/stop-icon.svg";
-import WalkIcon from "../../asset/images/icons/walk.svg";
+import VehicleIcon from "../../asset/images/badges/vehicleIcon.svg";
+import CompassIcon from "../../asset/images/badges/compass-icon.svg";
+import IdIcon from "../../asset/images/badges/id-icon.svg";
+import NetworkIcon from "../../asset/images/badges/network-icon.svg";
+import StopIcon from "../../asset/images/badges/stop-icon.svg";
+import WalkIcon from "../../asset/images/badges/walk.svg";
 
 const travelTips = [
   {
@@ -41,7 +41,7 @@ const travelTips = [
 
 const TravelTipsSection = () => {
   return (
-    <section className="w-[90%] max-w-7xl mx-auto mt-25 p-10 text-start">
+    <section className="w-[90%] max-w-7xl mx-auto mt-25 px-10 text-start">
       <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold py-5">
         Helpful Travel <span className="text-[#A42D2B]">Tips</span>
       </h2>

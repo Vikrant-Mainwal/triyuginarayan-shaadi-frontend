@@ -1,14 +1,10 @@
 "use client";
 import Image from "next/image";
-import Logo from "../../asset/images/logo.svg";
+import Logo from "../../asset/images/logo/logo.svg";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import Home from "../../asset/images/icons/round-home.svg";
-import People from "../../asset/images/icons/ion_people1.svg";
-import Location from "../../asset/images/icons/location-fill.svg";
-import Call from "../../asset/images/icons/call-filled.svg";
 import TopUpForm from "../top-up-form/TopUpForm";
 import { usePathname } from "next/navigation";
 
@@ -18,10 +14,10 @@ const Navbar = () => {
   const [isOpenForm, setIsOpenForm] = useState(false);
 
   const links = [
-    { name: "Home", href: "/", image: Home },
-    { name: "About us", href: "/about", image: People },
-    { name: "How to reach?", href: "/how-to-reach", image: Location },
-    { name: "Contact Us", href: "/contact-us", image: Call },
+    { name: "Home", href: "/" },
+    { name: "About us", href: "/about" },
+    { name: "How to reach?", href: "/how-to-reach"},
+    { name: "Contact Us", href: "/contact-us"},
     // { name: "Plans", href: "/plans" ,image: Logo },
   ];
 

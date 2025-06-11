@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import ContactImage from "../../asset/images/contact-info.png";
-import Call from "../../asset/images/icons/call-icon.svg";
-import Whatsapp from "../../asset/images/icons/whatsapp-icon.svg";
-import Email from "../../asset/images/icons/message-icon.svg";
+import Call from "../../asset/images/badges/call-icon.svg";
+import Whatsapp from "../../asset/images/badges/whatsapp-icon.svg";
+import Email from "../../asset/images/badges/message-icon.svg";
 
 const ContactInfo = () => {
 
@@ -20,19 +20,6 @@ const ContactInfo = () => {
           Sometimes, speaking to someone directly feels easier — we completely
           understand.
         </p>
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
-          {contactInfo.map((info, index) => (
-            <div key={index} className="flex gap-4">
-              <div className="flex justify-center items-center">
-                <Image src={info.image} alt="image" />
-              </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-[20px] font-bold">{info.title}</h3>
-                <p className="text-[16px] md:text-[18px] w-[200px] text-wrap">{info.value}</p>
-              </div>
-            </div>
-          ))}
-        </div> */}
 
         <div className="flex flex-col gap-10 mt-8">
           <div className="flex flex-col md:flex-row gap-15">

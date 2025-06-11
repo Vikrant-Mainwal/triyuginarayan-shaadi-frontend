@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contactUsHero from "../../asset/images/contact-us.svg";
+import contactUsHero from "../../asset/images/contact-us.png";
 
 const ContactSupportHero = () => {
   return (

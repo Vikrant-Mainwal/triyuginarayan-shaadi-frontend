@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Focus from "../../asset/images/focus.svg";
-import Knowledge from "../../asset/images/knowledge.svg";
-import Planning from "../../asset/images/planning.svg";
-import Pricing from "../../asset/images/pricing.svg";
+import Focus from "../../asset/images/badges/focus.svg";
+import Knowledge from "../../asset/images/badges/knowledge.svg";
+import Planning from "../../asset/images/badges/planning.svg";
+import Pricing from "../../asset/images/badges/pricing.svg";
 
 const Expertise = () => {
 
