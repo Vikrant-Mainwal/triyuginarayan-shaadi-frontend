@@ -6,10 +6,9 @@ body{
   background-color: #FDFFF2;
 }
 
-/*.raleway {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-} */
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
 
 h1{
   font-family: "Raleway" , sans-serif;
@@ -36,14 +35,8 @@ p, a, li, button {
 .bg-image {
   background-image: url('/hero_image.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
-
-.slick-prev:before,
-  .slick-next:before {
-    color: #000 !important; /* Black arrow color */
-    font-size: 30px;         /* Make it larger if needed */
-  }
 
 @media screen and (max-width: 768px) {
   .bg-image {

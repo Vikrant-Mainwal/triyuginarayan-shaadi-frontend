@@ -7,7 +7,7 @@ const TempleInfoSection = () => {
   return (
     <section className="w-full flex flex-col items-center mt-25">
       {/* Why Special Section */}
-      <div className="flex flex-col gap-10 w-[90%] max-w-5xl text-center px-6">
+      <div className="flex flex-col gap-10 w-[90%] text-center px-6">
         <h2 className=" text-center raleway font-bold">
           Why this place is so <span className="text-[#A42D2B]">Special</span>?
         </h2>

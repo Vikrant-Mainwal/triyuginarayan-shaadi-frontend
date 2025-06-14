@@ -12,7 +12,7 @@ const Plans = () => {
    const [isOpenForm, setIsOpenForm] = useState(false);
 
   return (
-    <div className="w-[90%] m-auto mt-25 mb-5">
+    <div className="w-[90%] m-auto mt-25 mb-5 max-w-[1400px]">
       <div className="flex flex-col gap-4 justify-center items-center ">
         
         <div>
@@ -32,7 +32,7 @@ const Plans = () => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-20 w-fit m-auto mt-20 mb-10">
+      <div className="flex flex-col lg:flex-row gap-20 w-fit m-auto mt-20 mb-10">
         {packageData.map((item, index) => (
           <div
             key={index}
@@ -67,16 +67,16 @@ const Plans = () => {
                 <ul className="flex flex-col text-start px-5">
                   {item.features.map((feature, i) => {
                     return (
-                      <div className="flex gap-4 p-2" key={i}>
+                      <li className="flex gap-4 p-2" key={i}>
                         <Image
                           src={Tick}
                           alt="image"
                           className="w-[27px] md:w-[30px]"
                         />
-                        <li className="">
+                        <p>
                           {feature}
-                        </li>
-                      </div>
+                        </p>
+                      </li>
                     );
                   })}
                 </ul>

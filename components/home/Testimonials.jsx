@@ -6,7 +6,7 @@ import Profilepic from "../../asset/images/profile-pic.png"
 const Testimonials = () => {
   return (
     <div>
-      <div className="w-[90%] m-auto mt-25 mb-5">
+      <div className="w-[90%] m-auto mt-25 mb-5 max-w-[1400px]">
         <h2 className="text-center text-[28px] md:text-[38px] raleway font-bold py-6">
           What <span className="text-[#A42D2B]">Couples</span> Are Saying
         </h2>

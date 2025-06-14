@@ -13,8 +13,8 @@ const Faqs = () => {
   };
 
   return (
-    <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-6 mb-10 mt-25">
-      <h2 className="text-[28px] md:text-[38px] text-center font-bold raleway p-6">
+    <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-6 mb-35 mt-25 max-w-[1400px]">
+      <h2 className="text-center p-6">
         Frequently <span className="text-[#A42D2B]">Asked</span> Questions
       </h2>
 
@@ -25,6 +25,7 @@ const Faqs = () => {
               className="cursor-pointer flex justify-between items-center"
               onClick={() => toggleFaqs(index)}
               aria-expanded={openIndex === index}
+              aria-controls={`faq-content-${index}`}
             >
               <h3 className="text-[16px] font-medium py-2">{item.question}</h3>
               <div className="px-2">

@@ -8,7 +8,7 @@ import Jaimala from "../../asset/images/badges/jaimala.svg";
 const ExperienceSection = () => {
   return (
     <div className="w-[90%] m-auto p-10 mt-25 flex flex-col items-center gap-10 text-center">
-      <h2 className="text-[35px] md:text-[52px] text-center raleway font-bold">
+      <h2 className="text-center">
         What you will <span className="text-[#A42D2B]">experience?</span>{" "}
       </h2>
       <p>

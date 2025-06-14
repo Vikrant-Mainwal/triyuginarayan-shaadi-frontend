@@ -6,7 +6,7 @@ const WeddingCost = () => {
    const [isOpenForm, setIsOpenForm] = useState(false);
 
   return (
-    <div className=" w-[80%] flex flex-col gap-6 m-auto mt-25 mb-5 text-center ">
+    <div className=" w-[80%] flex flex-col gap-6 m-auto mt-25 mb-5 text-center max-w-[1400px] ">
         <h2 className="text-[28px] md:text-[38px] font-bold raleway py-6">
           Triyuginarayan Temple
           <span className="text-[#A42D2B]">{"   "}Wedding Cost</span>

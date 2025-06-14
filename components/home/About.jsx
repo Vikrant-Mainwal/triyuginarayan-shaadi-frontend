@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row w-[90%] m-auto gap-10 mt-15 md:mt-25 mb-5">
+      <div className="flex flex-col md:flex-row w-[90%] m-auto gap-10 mt-15 md:mt-25 mb-5 max-w-[1400px]">
         <div className="flex flex-col gap-4 md:w-[50%] text-center md:text-left justify-center px-6">
           <h2 className="text-[28px] md:text-[38px] font-bold raleway">
             About <span className="text-[#A42D2B]">Us</span>

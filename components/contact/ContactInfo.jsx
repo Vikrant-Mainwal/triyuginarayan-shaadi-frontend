@@ -8,7 +8,7 @@ import Email from "../../asset/images/badges/message-icon.svg";
 const ContactInfo = () => {
 
   return (
-    <div className="w-[90%] max-w-7xl mx-auto my-16 flex flex-col md:flex-row items-center gap-10">
+    <div className="w-[90%] max-w-7xl mx-auto mt-25 mb-35 flex flex-col md:flex-row items-center gap-10">
       <div className="hidden md:block">
         <Image src={ContactImage} alt="image" className=" md:w-[500px]" />
       </div>
@@ -29,7 +29,7 @@ const ContactInfo = () => {
               </div>
                <div className="flex flex-col justify-center gap-2 text-center md:text-start">
                 <h3 className="text-[20px] font-bold">Call Us at</h3>
-                <p className="text-[16px] md:text-[18px]">+91-9023577149</p>
+                <p>+91-9023577149</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-4 ">
@@ -38,7 +38,7 @@ const ContactInfo = () => {
               </div>
                <div className="flex flex-col justify-center gap-2 text-center md:text-start">
                 <h3 className="text-[20px] font-bold">Whatsapp at</h3>
-                <p className="text-[16px] md:text-[18px]">+91-9023577149</p>
+                <p>+91-9023577149</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const ContactInfo = () => {
               </div>
                <div className="flex flex-col justify-center gap-2 text-center md:text-start">
                 <h3 className="text-[20px] font-bold">Email Us</h3>
-                <p className="text-[16px] md:text-[18px]">triyuginarayanshaadiwork@gmail.com</p>
+                <p>triyuginarayanshaadiwork@gmail.com</p>
               </div>
           </div>
         </div>

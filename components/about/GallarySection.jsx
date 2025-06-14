@@ -71,7 +71,7 @@ function GallarySection() {
   ];
 
   return (
-    <div className="relative slider-container mx-auto py-10 px-5">
+    <div className="relative slider-container mx-auto py-10 px-5 mb-35 mt-25">
       <Slider {...settings}>
         {gallary.map((num, index) => (
           <div key={index}>

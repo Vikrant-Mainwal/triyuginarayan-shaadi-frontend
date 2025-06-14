@@ -5,7 +5,7 @@ import Ellipse from "../../asset/images/others/Ellipse.svg";
 
 const WhyChoose = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-40 mt-25 mb-5 w-[90%] m-auto">
+    <div className="flex flex-col md:flex-row gap-40 mt-25 mb-5 w-[90%] m-auto max-w-[1400px]">
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-15 ">
         <div className="flex flex-col gap-6  md:w-[50%] m-auto px-3">
           <h2 className="text-[28px] md:text-[38px] text-center md:text-start font-bold raleway p-3">

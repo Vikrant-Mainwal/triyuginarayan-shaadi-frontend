@@ -9,7 +9,7 @@ const SacredJourneySection = () => {
       </div>
 
       <div className='text-center md:text-start px-5 flex flex-col gap-10'>
-        <h1 className="text-[35px] md:text-[52px] leading-tight font-bold">
+        <h1 className="leading-tight ">
           “Your <span className="text-[#A42D2B]">Journey</span> to a{" "}
           <span className="text-[#A42D2B]">Sacred</span> Beginning”
         </h1>
