@@ -270,42 +270,49 @@ export default function RootLayout({ children }) {
           content="https://triyuginarayanshaadi.com/hero_image.jpg"
         />
         <Script
+          id="Local Business"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
           }}
         />
         <Script
+          id="Organization"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
           }}
         />
         <Script
+          id="Website"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
           }}
         />
         <Script
+          id="Products"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(productSchema),
           }}
         />
         <Script
+          id="FAQ"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(faqSchema),
           }}
         />
         <Script
+          id="BreadCrumb List"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(breadcrumbListSchema),
           }}
         />
         <Script
+          id="Review"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(reviewSchema),
