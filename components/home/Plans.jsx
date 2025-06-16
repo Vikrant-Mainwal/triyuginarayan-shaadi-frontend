@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import Triyuginarayan from "../../asset/images/logo/logo.svg";
@@ -9,12 +9,11 @@ import packageData from "../../asset/plan.json";
 import TopUpForm from "../top-up-form/TopUpForm";
 
 const Plans = () => {
-   const [isOpenForm, setIsOpenForm] = useState(false);
+  const [isOpenForm, setIsOpenForm] = useState(false);
 
   return (
     <div className="w-[90%] m-auto mt-25 mb-5 max-w-[1400px]">
       <div className="flex flex-col gap-4 justify-center items-center ">
-        
         <div>
           <Image src={Triyuginarayan} alt="image" />
         </div>
@@ -25,10 +24,11 @@ const Plans = () => {
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
         </h2>
 
-        <p className="text-[16px] text-justify md:text-center open-sans px-6">
-          We offer two thoughtfully crafted wedding packages designed to fit
-          different visions and budgets. Both ensure an authentic Triyuginarayan
-          destination wedding experience.
+        <p className="text-[16px] text-justify md:text-center open-sans px-6 w-full lg:w-[70vw] mx-auto">
+          We have two well-crafted wedding packages that cater to varying budget
+          scales and tastes. Both are designed to provide a memorable
+          destination wedding experience while keeping the Triyuginarayan Temple
+          Wedding Cost affordable and clear.
         </p>
       </div>
 
@@ -41,7 +41,9 @@ const Plans = () => {
             }`}
           >
             <div className="flex flex-col items-center gap-4 mt-10">
-              <h3 className="text-[28px] md:text-[38px] font-bold">{item.title}</h3>
+              <h3 className="text-[28px] md:text-[38px] font-bold">
+                {item.title}
+              </h3>
               <p className="!text-[14px] text-center p-[12px] font-bold text-[#656565]">
                 {item.description}
               </p>
@@ -73,9 +75,7 @@ const Plans = () => {
                           alt="image"
                           className="w-[27px] md:w-[30px]"
                         />
-                        <p>
-                          {feature}
-                        </p>
+                        <p>{feature}</p>
                       </li>
                     );
                   })}
@@ -83,10 +83,13 @@ const Plans = () => {
               </div>
             </div>
 
-            <button className="bg-[#A42D2B] rounded-[7px] px-8 py-3 text-white my-15 cursor-pointer " onClick={()=>setIsOpenForm(true)}>
+            <button
+              className="bg-[#A42D2B] rounded-[7px] px-8 py-3 text-white my-15 cursor-pointer "
+              onClick={() => setIsOpenForm(true)}
+            >
               Select Package
             </button>
-            {isOpenForm && <TopUpForm onClose={()=>setIsOpenForm(false)}/>}
+            {isOpenForm && <TopUpForm onClose={() => setIsOpenForm(false)} />}
           </div>
         ))}
       </div>
