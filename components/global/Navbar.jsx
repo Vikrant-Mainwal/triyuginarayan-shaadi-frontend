@@ -116,12 +116,12 @@ const Navbar = () => {
                 ))}
               </ul>
               </div>
-              <div className="flex flex-col gap-4 mt-10 p-3 mb-7">
+              <div className="flex flex-col gap-4 mt-10 p-5 mb-7">
                 <div className="flex gap-4">
                   <Image src={Insta} alt="Instagram" className="w-10" />
                   <Image src={Facebook} alt="Facebook" className="w-10" />
                 </div>
-                <p className="!text-[12px] text-[#656565]">2025 ©️ triyuginarayanshaddi</p>
+                <p className="!text-[12px] text-[#656565] ">2025 ©️ triyuginarayanshaddi</p>
               </div>
             </div>
           </div>

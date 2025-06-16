@@ -20,6 +20,7 @@ const WeddingBookingForm = () => {
   const [errors, setErrors] = useState({
     phone: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -31,6 +32,8 @@ const WeddingBookingForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    setLoading(true);
 
     const phoneRegex = /^[0-9]{10}$/;
     let valid = true;
@@ -75,14 +78,18 @@ const WeddingBookingForm = () => {
 
     setErrors(newErrors);
 
-    if (!valid) return;
-
+    if (!valid) {
+      setLoading(false);
+      return;
+    }
     console.log(formData);
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
+
+    setLoading(false);
 
     if (res.ok) {
       router.push("/thank-you");
@@ -91,122 +98,113 @@ const WeddingBookingForm = () => {
     }
   };
 
-  const steps = [
-    {
-      label: "Personal Info",
-      content: (
-        <>
-          <div className="flex flex-col gap-4 mb-4">
-            <label htmlFor="Name" className="">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleChange}
-              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
-            />
-          </div>
-          <div className="flex flex-col gap-4 mb-4">
-            <label htmlFor="Name" className="">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
-            />
-          </div>
-          <div className="flex flex-col gap-4 mb-4">
-            <label htmlFor="Name" className="">
-              Phone No.
-            </label>
-            <input
-              type="number"
-              name="phone"
-              placeholder="Phone No."
-              value={formData.phone}
-              onChange={handleChange}
-              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
-            />
-          </div>
-        </>
-      ),
-    },
-    {
-      label: "Wedding Plans",
-      content: (
-        <>
-          <div className="flex flex-col gap-4 mb-4">
-            <label htmlFor="Name" className="">
-              Preferred wedding Date
-            </label>
-            <input
-              id="date"
-              name="date"
-              type="date"
-              value={formData.date}
-              onChange={handleChange}
-              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
-            />
-          </div>
-          <div className="flex flex-col gap-4 mb-4">
-            <label htmlFor="Name" className="">
-              No. of guests
-            </label>
-            <input
-              type="number"
-              name="guests"
-              placeholder="100"
-              value={formData.guests}
-              onChange={handleChange}
-              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
-            />
-          </div>
-          <div className="flex flex-col gap-4 mb-4">
-            <label htmlFor="Name" className="">
-              Name of the city
-            </label>
-            <select
-              className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
-              id="city"
-              name="city"
-              value={formData.city}
-              onChange={handleChange}
-            >
-              <option>Dehradun</option>
-              <option>Haridwar</option>
-              <option>New Tehri</option>
-            </select>
-          </div>
-          <div className="flex gap-2 items-start py-5">
-            <input
-              type="checkbox"
-              name="agree"
-              checked={formData.agree}
-              onChange={handleChange}
-              className="accent-[#A42D2B] w-[24px] h-[24px]"
-            />
-            <label
-              htmlFor="agree"
-              className="text-[16px] font-normal open-sans"
-            >
-              <p>
-                {" "}
-                I'm happy to be contacted by the Triyuginarayan Shaadi team
-                about my enquiry.
-              </p>
-            </label>
-          </div>
-        </>
-      ),
-    },
-  ];
+ const steps = [
+  {
+    label: "Personal Info",
+    content: (
+      <>
+        <div className="flex flex-col gap-1 mb-4">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full h-[42px] rounded-[7px]"
+          />
+          {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+        </div>
+        <div className="flex flex-col gap-1 mb-4">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full h-[42px] rounded-[7px]"
+          />
+          {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+        </div>
+        <div className="flex flex-col gap-1 mb-4">
+          <label htmlFor="phone">Phone No.</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone No."
+            value={formData.phone}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full h-[42px] rounded-[7px]"
+          />
+          {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
+        </div>
+      </>
+    ),
+  },
+  {
+    label: "Wedding Plans",
+    content: (
+      <>
+        <div className="flex flex-col gap-1 mb-4">
+          <label htmlFor="date">Preferred Wedding Date</label>
+          <input
+            id="date"
+            name="date"
+            type="date"
+            placeholder="DD/MM/YYYY"
+            value={formData.date}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 rounded-[7px] w-full h-[42px] uppercase"
+          />
+          {errors.date && <p className="text-red-500 text-sm">{errors.date}</p>}
+        </div>
+        <div className="flex flex-col gap-1 mb-4">
+          <label htmlFor="guests">No. of guests</label>
+          <input
+            type="number"
+            name="guests"
+            placeholder="100"
+            value={formData.guests}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full h-[42px] rounded-[7px]"
+          />
+          {errors.guests && <p className="text-red-500 text-sm">{errors.guests}</p>}
+        </div>
+        <div className="flex flex-col gap-1 mb-6">
+          <label htmlFor="city">Name of the city</label>
+          <select
+            id="city"
+            name="city"
+            value={formData.city}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full !h-[42px] rounded-[7px]"
+          >
+            <option value="">Select</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Haridwar">Haridwar</option>
+            <option value="New Tehri">New Tehri</option>
+          </select>
+          {errors.city && <p className="text-red-500 text-sm">{errors.city}</p>}
+        </div>
+        <div className="flex gap-2 items-start mb-4">
+          <input
+            type="checkbox"
+            name="agree"
+            checked={formData.agree}
+            onChange={handleChange}
+            className="accent-[#A42D2B] w-[20px] h-[20px]"
+          />
+          <label htmlFor="agree" className="!text-[14px] open-sans">
+            I'm happy to be contacted by the Triyuginarayan Shaadi team about my enquiry.
+          </label>
+        </div>
+        {errors.agree && <p className="text-red-500 text-sm">{errors.agree}</p>}
+      </>
+    ),
+  },
+];
+
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 mb-5 mt-25">
@@ -216,7 +214,7 @@ const WeddingBookingForm = () => {
       </h2>
 
       {/* Desktop Form */}
-      <div className="hidden md:block max-w-[1200px] h-[700px] w-full rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] px-15 py-8 bg-[url(/mandala.png)] bg-center bg-cover bg-no-repeat">
+      <div className="hidden md:block max-w-[1200px] w-full min-h-[600px] rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] px-15 py-8 bg-image1">
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -231,6 +229,7 @@ const WeddingBookingForm = () => {
               <input
                 id="name"
                 name="name"
+                placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
                 type="text"
@@ -247,9 +246,11 @@ const WeddingBookingForm = () => {
               <input
                 id="phone"
                 name="phone"
+                placeholder="Phone no."
                 value={formData.phone}
                 onChange={handleChange}
-                type="tel"
+                type="text"
+                inputMode="numeric"
                 className="border border-gray-300 w-[400px] p-2 mb-4 rounded-[7px]"
               />
               {errors.phone && (
@@ -263,6 +264,7 @@ const WeddingBookingForm = () => {
               <input
                 id="email"
                 name="email"
+                placeholder="Xyz123@gmail.com"
                 value={formData.email}
                 onChange={handleChange}
                 type="email"
@@ -283,7 +285,7 @@ const WeddingBookingForm = () => {
                   onChange={handleChange}
                   className="accent-[#A42D2B] w-[20px] h-[20px]"
                 />
-                <label htmlFor="agree" className="text-[14px] open-sans">
+                <label htmlFor="agree" className=" open-sans">
                   I'm happy to be contacted by the Triyuginarayan Shaadi team
                   about my enquiry.
                 </label>
@@ -291,9 +293,7 @@ const WeddingBookingForm = () => {
 
               <div>
                 {errors.agree && (
-                  <p className="text-red-500 !text-[14px]">
-                    {errors.agree}
-                  </p>
+                  <p className="text-red-500 !text-[14px]">{errors.agree}</p>
                 )}
               </div>
             </div>
@@ -302,7 +302,7 @@ const WeddingBookingForm = () => {
           <div>
             <h3 className="text-[32px] font-semibold mb-8">Wedding Plans</h3>
             <div className="flex gap-4 ">
-              <div className="flex flex-col gap-2 w-[200px]">
+              <div className="flex flex-col gap-2 w-[200px] ">
                 <label htmlFor="date">Preferred Wedding Date</label>
                 <input
                   id="date"
@@ -310,7 +310,7 @@ const WeddingBookingForm = () => {
                   type="date"
                   value={formData.date}
                   onChange={handleChange}
-                  className="border border-gray-300 p-2 w-full mb-4 rounded-[7px]"
+                  className="border border-gray-300 p-2 w-full mb-4 rounded-[7px] uppercase text-gray-600"
                 />
                 {errors.date && (
                   <p className="text-red-500 !text-[14px] mt-[-12px]">
@@ -323,6 +323,7 @@ const WeddingBookingForm = () => {
                 <input
                   id="guests"
                   name="guests"
+                  placeholder="eg.20"
                   type="number"
                   value={formData.guests}
                   onChange={handleChange}
@@ -362,9 +363,37 @@ const WeddingBookingForm = () => {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="bg-[#FFB52C] text-black font-semibold px-6 py-4 rounded-md shadow-md cursor-pointer"
+            className={`bg-[#FFB52C] text-black font-semibold px-6 py-4 rounded-md shadow-md cursor-pointer m-auto  ${
+              loading ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={loading}
           >
-            Start my wedding journey
+            {loading ? (
+              <div className="flex items-center justify-center gap-2">
+                <svg
+                  className="animate-spin h-5 w-5 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                  />
+                </svg>
+                Loading...
+              </div>
+            ) : (
+              "Start my wedding journey"
+            )}
           </button>
         </div>
       </div>
@@ -379,7 +408,7 @@ const WeddingBookingForm = () => {
             onClick={() => setStep(step - 1)}
           />
         )}
-        <h3 className="text-xl font-semibold m-6 text-center ">
+        <h3 className="text-[16px] font-semibold m-6 text-center ">
           {steps[step].label}
         </h3>
         <form
@@ -396,17 +425,46 @@ const WeddingBookingForm = () => {
           {step < steps.length - 1 ? (
             <button
               onClick={() => setStep(step + 1)}
-              className="w-[219px] py-4 bg-[#FFB52C] rounded m-auto mb-10"
+              className="w-[219px] py-4 bg-[#FFB52C] rounded-[7px] m-auto mb-10 font-semibold"
             >
               Next
             </button>
           ) : (
-            <button
-              onClick={handleSubmit}
-              className="w-[219px] py-4 bg-[#FFB52C] rounded m-auto mb-10"
-            >
-              Start my wedding journey
-            </button>
+             <button
+            type="submit"
+            onClick={handleSubmit}
+            className={`bg-[#FFB52C] rounded-[7px] py-4  m-auto w-[219px] font-semibold  ${
+              loading ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            disabled={loading}
+          >
+            {loading ? (
+              <div className="flex items-center justify-center gap-2">
+                <svg
+                  className="animate-spin h-5 w-5 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                  />
+                </svg>
+                Loading...
+              </div>
+            ) : (
+              "Start my wedding journey"
+            )}
+          </button>
           )}
         </div>
       </div>

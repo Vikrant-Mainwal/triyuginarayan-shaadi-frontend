@@ -7,30 +7,30 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="flex justify-center items-center bg-[#FFE4B8] h-screen m-auto">
-      <div className="inset-0 flex flex-col gap-5 items-center justify-center w-[800px] bg-[#FDFFF2] rounded-[22px] p-[40px]">
-        <div className="flex items-start w-full">
+    <div className="flex justify-center items-center bg-[#FFE4B8] h-[80vh] m-auto">
+      <div className="inset-0 flex flex-col gap-5 items-center justify-center w-[350px] md:w-[800px] bg-[#FDFFF2] rounded-[22px] p-[40px]">
+        <div className="flex items-center justify-center md:justify-start md:items-start w-full mb-6 md:mb-0">
           <Image src={Sloganlogo} alt="imah" />
         </div>
         <div className="hidden md:block">
         <Image src={thank} alt="image" />
         </div>
 
-        <div className="flex md:flex-col  gap-4">
-          <div className="flex items-center justify-center gap-4">
-            <Image src={tick} alt="image" className="w-[45px] h-auto" />
-            <h3 className="text-[38px] font-bold">
+        <div className="flex flex-col  gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <Image src={tick} alt="image" className="w-[70px] md:w-[45px] h-auto" />
+            <h3 className="text-[28px] md:text-[38px] font-bold text-center">
               Your request has been submitted.
             </h3>
           </div>
-          <p className="text-center">
+          <p className="text-justify md:text-center">
             Thank you for reaching out. Our team will connect with you shortly
             to help you plan your sacred wedding at Triyuginarayan Temple.
           </p>
         </div>
 
         <Link href="/">
-          <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 text-white cursor-pointer">
+          <button className="bg-[#A42D2B] rounded-[7px] px-6 py-3 text-white cursor-pointer mt-5">
             Back to Home
           </button>
         </Link>

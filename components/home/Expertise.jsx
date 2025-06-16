@@ -40,7 +40,7 @@ const Expertise = () => {
           Our <span className="text-[#A42D2B]">Expertise</span>
         </h2>
         <p className="text-[16px] open-sans">
-          We’re not just planners — we’re <span className="">storytellers</span>  of a sacred beginning.
+          We’re not just planners — we’re <span className="text-[#A42D2B]">storytellers</span>  of a sacred beginning.
         </p>
       </div>
 
@@ -52,7 +52,7 @@ const Expertise = () => {
             className="flex flex-col gap-4 items-center w-[250px] md:w-[220px] text-center"
           >
             <Image src={item.src} alt={item.alt} className="w-[100px]" />
-            <p className="text-[16px]">{item.text}</p>
+            <p className="!text-[14px]">{item.text}</p>
           </div>
         ))}
       </div>

@@ -1,3 +1,9 @@
+import Image from "next/image";
+import home from '../../asset/images/badges/home.svg'
+import havan2 from '../../asset/images/badges/havan2.svg'
+import gallary from '../../asset/images/badges/gallary.svg'
+import menu from '../../asset/images/badges/menu.svg'
+
 const WhatWeDoSection = () => {
   return (
     <div className="w-[90%] m-auto mt-25 flex flex-col gap-10 text-center">
@@ -14,6 +20,9 @@ const WhatWeDoSection = () => {
 
       <div className="flex flex-col gap-15 p-5 text-center m-auto">
         <div className="flex flex-col gap-4">
+          <div className="flex justify-center">
+            <Image src={havan2} alt="image" className="w-[100px]"/>
+          </div>
           <h3 className="text-[22px] md:text-[32px] font-bold">
             Sacred ceremonies
           </h3>
@@ -28,6 +37,9 @@ const WhatWeDoSection = () => {
         </div>
 
         <div className="flex flex-col gap-4">
+          <div className="flex justify-center">
+            <Image src={home} alt="image" className="w-[100px]"/>
+          </div>
           <h3 className="text-[22px] md:text-[32px] font-bold">
             Stay & Hospitality
           </h3>
@@ -42,6 +54,9 @@ const WhatWeDoSection = () => {
         </div>
 
         <div className="flex flex-col gap-4">
+          <div className="flex justify-center">
+            <Image src={gallary} alt="image" className="w-[100px]"/>
+          </div>
           <h3 className="text-[22px] md:text-[32px] font-bold">
             Memories & Moments
           </h3>
@@ -53,6 +68,9 @@ const WhatWeDoSection = () => {
         </div>
 
         <div className="flex flex-col gap-4">
+          <div className="flex justify-center">
+            <Image src={menu} alt="image" className="w-[100px]"/>
+          </div>
           <h3 className="text-[22px] md:text-[32px] font-bold">
             Planning & Support
           </h3>

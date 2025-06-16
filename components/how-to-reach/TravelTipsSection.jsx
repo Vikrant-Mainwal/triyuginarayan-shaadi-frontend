@@ -13,8 +13,8 @@ const travelTips = [
     text: "Mountain roads are narrow — smaller vehicles (SUVs or jeeps) are recommended.",
   },
   {
-    icon: StopIcon,
-    alt: "Stop icon",
+    icon: WalkIcon,
+    alt: "Walk icon",
     text: "Avoid late-night travel, especially with elderly guests.",
   },
   {
@@ -23,8 +23,8 @@ const travelTips = [
     text: "Keep valid ID proof for all guests.",
   },
   {
-    icon: WalkIcon,
-    alt: "Walk icon",
+    icon: StopIcon,
+    alt: "Stop icon",
     text: "Vehicles may stop a short walk from the temple depending on traffic or weather.",
   },
   {
@@ -41,21 +41,21 @@ const travelTips = [
 
 const TravelTipsSection = () => {
   return (
-    <section className="w-[90%] max-w-7xl mx-auto mt-25 px-10 text-start">
+    <section className="w-[90%] mx-auto mt-25 px-5 text-start">
       <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold py-5">
         Helpful Travel <span className="text-[#A42D2B]">Tips</span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {travelTips.map(({ icon, alt, text }, index) => (
           <article
             key={index}
-            className="flex flex-col gap-4 bg-[#FFF0E8] shadow-[0_4px_32px_rgba(0,0,0,0.18)] p-8 rounded-[21px]"
+            className="flex flex-col gap-5 bg-[#FFF0E8] shadow-[0_4px_32px_rgba(0,0,0,0.18)] p-10 rounded-[21px]  h-[250px]"
           >
             <div className="flex justify-center md:justify-start">
-            <Image src={icon} alt={alt} />
+            <Image src={icon} alt={alt} className="w-[70px]"/>
             </div>
-            <p className="text-center md:text-start leading-relaxed">{text}</p>
+            <p className="text-justify md:text-start">{text}</p>
           </article>
         ))}
       </div>

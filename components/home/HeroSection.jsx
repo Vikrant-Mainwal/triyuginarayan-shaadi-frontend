@@ -19,9 +19,9 @@ const HeroSection = () => {
             <h1 className="text-white pt-6 font-bold leading-12">
               Wedding at <span className="text-[#FFE4B8]">Triyuginarayan</span>
             </h1>
-            <h4 className="text-white text-[24px] md:text-[35px] open-sans font-semibold">
+            <h3 className="text-white text-[24px] md:text-[35px] open-sans font-semibold">
               Where Divine Love Began
-            </h4>
+            </h3>
             <p className="text-white w-[300px] md:w-full m-auto md:m-0 text-[16px] leading-relaxed font-open-sans">
               Host your wedding where Lord Shiva and Goddess Parvati united in
               sacred vows.A serene Himalayan setting for couples seeking a

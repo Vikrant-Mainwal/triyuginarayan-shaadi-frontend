@@ -17,7 +17,7 @@ const ContactSupportHero = () => {
           “We're here to help <span className="text-[#A42D2B]">Begin</span> your{" "}
           <span className="text-[#A42D2B]">New journey</span>”
         </h1>
-        <div className="flex flex-col gap-4 text-justify md:text-start">
+        <div className="flex flex-col gap-4 text-justify md:text-start px-5 md:px-0">
           <p>
             Planning a wedding is a big step. Planning one at a sacred place
             like Triyuginarayan Temple makes it even more special — and we

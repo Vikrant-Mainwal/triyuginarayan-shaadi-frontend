@@ -37,6 +37,12 @@ p, a, li, button {
   background-size: cover;
   background-position: top;
 }
+.bg-image1 {
+  background-image: url('/mandala.png');
+  background-size: cover;
+  background-position: center;
+   background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 768px) {
   .bg-image {

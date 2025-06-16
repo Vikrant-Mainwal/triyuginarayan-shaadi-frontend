@@ -3,7 +3,7 @@ import imageSrc from '../../asset/images/shivparvati.png';
 
 const SacredJourneySection = () => {
   return (
-    <section className="flex flex-col md:flex-row m-auto mt-10 gap-4 md:gap-7 w-[90%] max-w-[1200px]">
+    <section className="flex flex-col md:flex-row items-center justify-center m-auto mt-10 gap-4 md:gap-7 w-[90%] max-w-[1200px]">
       <div className="flex-shrink-0">
         <Image src={imageSrc} alt="Shivparvati" className="object-contain h-[500px]" />
       </div>
@@ -13,7 +13,7 @@ const SacredJourneySection = () => {
           “Your <span className="text-[#A42D2B]">Journey</span> to a{" "}
           <span className="text-[#A42D2B]">Sacred</span> Beginning”
         </h1>
-        <div className="flex flex-col gap-5 mt-3 text-justify md:text-start">
+        <div className="flex flex-col gap-5 text-justify md:text-start">
           <p>
             Planning your wedding at Triyuginarayan Temple means beginning your married life
             with blessings, peace, and nature all around you. Located in the hills of Rudraprayag, Uttarakhand,

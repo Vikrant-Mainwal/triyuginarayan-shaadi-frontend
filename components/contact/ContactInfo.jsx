@@ -16,7 +16,7 @@ const ContactInfo = () => {
         <h2 className="py-6">
           Want to <span className="text-[#A42D2B]">talk</span> right away ?
         </h2>
-        <p className="text-justify md:text-start">
+        <p className="text-justify md:text-start px-5">
           Sometimes, speaking to someone directly feels easier — we completely
           understand.
         </p>
@@ -25,7 +25,7 @@ const ContactInfo = () => {
           <div className="flex flex-col md:flex-row gap-15">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex justify-center items-center">
-                <Image src={Call} alt="image" />
+                <Image src={Call} alt="image" className="w-[70px]" />
               </div>
                <div className="flex flex-col justify-center gap-2 text-center md:text-start">
                 <h3 className="text-[20px] font-bold">Call Us at</h3>
@@ -34,7 +34,7 @@ const ContactInfo = () => {
             </div>
             <div className="flex flex-col md:flex-row gap-4 ">
               <div className="flex justify-center items-center">
-                <Image src={Whatsapp} alt="image" />
+                <Image src={Whatsapp} alt="image" className="w-[70px]" />
               </div>
                <div className="flex flex-col justify-center gap-2 text-center md:text-start">
                 <h3 className="text-[20px] font-bold">Whatsapp at</h3>
@@ -44,7 +44,7 @@ const ContactInfo = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex justify-center items-center ">
-                <Image src={Email} alt="image" />
+                <Image src={Email} alt="image" className="w-[70px]" />
               </div>
                <div className="flex flex-col justify-center gap-2 text-center md:text-start">
                 <h3 className="text-[20px] font-bold">Email Us</h3>
