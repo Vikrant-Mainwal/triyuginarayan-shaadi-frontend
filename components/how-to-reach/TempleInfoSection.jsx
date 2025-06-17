@@ -8,11 +8,11 @@ const TempleInfoSection = () => {
     <section className="w-full flex flex-col items-center mt-25">
       {/* Why Special Section */}
       <div className="flex flex-col gap-10 w-[90%] text-center px-6">
-        <h2 className=" text-center raleway font-bold">
+        <p className=" text-center heading">
           Why this place is so <span className="text-[#A42D2B]">Special</span>?
-        </h2>
+        </p>
         <div className="flex flex-col gap-6 leading-relaxed">
-          <p className="text-justify md:text-center">
+          <p className="para text-justify md:text-center">
             Triyuginarayan Temple isn’t just a wedding venue — it’s a divine location. According to mythology, this is where Lord Shiva and Parvati were married, and Lord Vishnu stood witness to their union. The temple’s eternal fire, called the Akhand Dhuni, still burns to this day. That’s why couples come from all over — to begin their forever where sacred love once started. The temple’s eternal fire, called the Akhand Dhuni, still burns to this day. That’s why couples come from all over — to begin their forever where sacred love once started.
           </p>
         </div>
@@ -23,14 +23,14 @@ const TempleInfoSection = () => {
             alt="Triyuginarayan Temple caves"
             className="w-[600px]"
           />
-          <p className="mt-2 text-sm italic">A scene depicting the wedding of Shiva and Goddess Parvati</p>
+          <p className="mt-2 text-sm italic para">A scene depicting the wedding of Shiva and Goddess Parvati</p>
         </div>
       </div>
 
       {/* How to Reach Section */}
       <div className="flex flex-col gap-10 w-[80%] text-center mt-25">
-        <h2>How to Reach <span className="text-[#A42D2B]">Triyuginarayan Temple?</span> </h2>
-        <p className="text-justify md:text-center">
+        <p className="heading">How to Reach <span className="text-[#A42D2B]">Triyuginarayan Temple?</span> </p>
+        <p className="text-justify md:text-center para">
           Triyuginarayan is around 15 km from Sonprayag, a key stop on the Kedarnath route.
           It’s well connected, but the last stretch is through the mountains — peaceful and scenic.
         </p>

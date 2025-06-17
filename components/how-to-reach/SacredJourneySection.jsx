@@ -9,18 +9,18 @@ const SacredJourneySection = () => {
       </div>
 
       <div className='text-center md:text-start px-5 flex flex-col gap-10'>
-        <h1 className="leading-tight ">
+        <p className="main-heading">
           “Your <span className="text-[#A42D2B]">Journey</span> to a{" "}
           <span className="text-[#A42D2B]">Sacred</span> Beginning”
-        </h1>
+        </p>
         <div className="flex flex-col gap-5 text-justify md:text-start">
-          <p>
+          <p className='para'>
             Planning your wedding at Triyuginarayan Temple means beginning your married life
             with blessings, peace, and nature all around you. Located in the hills of Rudraprayag, Uttarakhand,
             this is the same place where Lord Shiva and Goddess Parvati were married. The sacred fire from their
             wedding still burns at the temple — a symbol of eternal love.
           </p>
-          <p>
+          <p className='para'>
             Whether you're coming from near or far, we’re here to guide you — every step of the way.
           </p>
         </div>

@@ -207,11 +207,11 @@ const WeddingBookingForm = () => {
 
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 mb-5 mt-25">
-      <h2 className="text-center mb-10 px-5">
+    <div className="flex flex-col items-center justify-center p-4 mb-5 mt-25">
+      <p className="text-center mb-10 px-5 heading">
         Book your <span className="text-[#A42D2B] font-bold">Dream</span>{" "}
         Wedding!
-      </h2>
+      </p>
 
       {/* Desktop Form */}
       <div className="hidden md:block max-w-[1200px] w-full min-h-[600px] rounded-[22px] bg-white shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] px-15 py-8 bg-image1">
@@ -223,7 +223,7 @@ const WeddingBookingForm = () => {
           className="flex gap-10 justify-between"
         >
           <div>
-            <h3 className="text-[32px] font-semibold mb-8">Personal Details</h3>
+            <p className="text-[32px] font-semibold mb-8">Personal Details</p>
             <div className=" flex flex-col gap-1">
               <label htmlFor="name">Name</label>
               <input
@@ -300,7 +300,7 @@ const WeddingBookingForm = () => {
           </div>
 
           <div>
-            <h3 className="text-[32px] font-semibold mb-8">Wedding Plans</h3>
+            <p className="text-[32px] font-semibold mb-8">Wedding Plans</p>
             <div className="flex gap-4 ">
               <div className="flex flex-col gap-2 w-[200px] ">
                 <label htmlFor="date">Preferred Wedding Date</label>
@@ -408,9 +408,9 @@ const WeddingBookingForm = () => {
             onClick={() => setStep(step - 1)}
           />
         )}
-        <h3 className="text-[16px] font-semibold m-6 text-center ">
+        <p className="text-[16px] font-semibold m-6 text-center ">
           {steps[step].label}
-        </h3>
+        </p>
         <form
           onSubmit={(e) => {
             e.preventDefault();

@@ -32,20 +32,20 @@ const Expertise = () => {
         ]
    
   return (
-    <div className="w-[90%] flex flex-col items-center text-center mt-25 mb-5 max-w-[1400px] m-auto">
+    <div className="w-[90%] flex flex-col items-center text-center mt-10 md:mt-25 mb-5 max-w-[1400px] m-auto">
       
       {/* Heading */}
-      <div className="flex flex-col gap-4 py-6">
-        <h2 className="text-[28px] md:text-[38px] font-bold raleway py-6">
+      <div className="flex flex-col py-3">
+        <p className="heading py-6">
           Our <span className="text-[#A42D2B]">Expertise</span>
-        </h2>
-        <p className="text-[16px] open-sans">
+        </p>
+        <p className="para">
           We’re not just planners — we’re <span className="text-[#A42D2B]">storytellers</span>  of a sacred beginning.
         </p>
       </div>
 
       {/*  Cards */}
-      <div className="flex flex-wrap justify-center gap-15 p-6 md:p-10 mt-5 md:mt-0">
+      <div className="flex flex-wrap justify-center gap-15 p-6 md:p-10 md:mt-0">
         {expertise.map((item, index) => (
           <div
             key={index}

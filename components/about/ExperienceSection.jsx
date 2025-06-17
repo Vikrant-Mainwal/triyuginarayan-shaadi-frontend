@@ -7,11 +7,11 @@ import Jaimala from "../../asset/images/badges/jaimala.svg";
 
 const ExperienceSection = () => {
   return (
-    <div className="w-[90%] m-auto p-10 mt-25 flex flex-col items-center gap-10 text-center">
-      <h2 className="text-center">
+    <div className="w-[90%] m-auto p-10 mt-10 md:mt-25 flex flex-col items-center gap-10 text-center">
+      <p className="text-center heading">
         What you will <span className="text-[#A42D2B]">experience?</span>{" "}
-      </h2>
-      <p>
+      </p>
+      <p className="para">
         The rituals at Triyuginarayan Temple are simple but deeply meaningful:
       </p>
 
@@ -23,7 +23,7 @@ const ExperienceSection = () => {
               alt="Pheras image"
               className="w-[100px]"
             />
-            <p>Pheras around the same fire where Shiva-Parvati got married</p>
+            <p className="para">Pheras around the same fire where Shiva-Parvati got married</p>
           </div>
           <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
             <Image
@@ -31,7 +31,7 @@ const ExperienceSection = () => {
               alt="Havan image"
               className="w-[100px]"
             />
-            <p>Havan (sacred fire ceremony) with holy chants</p>
+            <p className="para">Havan (sacred fire ceremony) with holy chants</p>
           </div>
           <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
             <Image
@@ -39,7 +39,7 @@ const ExperienceSection = () => {
               alt="Geet image"
               className="w-[100px]"
             />
-            <p>Mangal Geet – local songs that bless the bride and groom</p>
+            <p className="para">Mangal Geet – local songs that bless the bride and groom</p>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ const ExperienceSection = () => {
               alt="Dhol image"
               className="w-[100px]"
             />
-            <p>Dhol–Damau music to celebrate your love</p>
+            <p className="para">Dhol–Damau music to celebrate your love</p>
           </div>
           <div className="flex flex-col gap-2 justify-center items-center w-[250px]">
             <Image
@@ -58,7 +58,7 @@ const ExperienceSection = () => {
               alt="Jaimala image"
               className="w-[100px]"
             />
-            <p>
+            <p className="para">
               Traditional rituals like Jaimala and Tilak, all guided by
               experienced priests
             </p>

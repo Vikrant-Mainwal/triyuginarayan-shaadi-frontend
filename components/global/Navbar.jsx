@@ -52,7 +52,7 @@ const Navbar = () => {
         {/* logo */}
         <div className="flex items-center ">
           <Link href={"/"}>
-            <Image src={Logo} alt="Large Logo" className="h-[80px]" />
+            <Image src={Logo} alt="Large Logo" className="h-[55px] md:h-[80px]" />
           </Link>
         </div>
 
@@ -118,8 +118,14 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col gap-4 mt-10 p-5 mb-7">
                 <div className="flex gap-4">
+                  
+              <a href="https://www.instagram.com/triyuginarayanshaadi?igsh=OGo2c2k1aWxoYmRr" target="_blank">
                   <Image src={Insta} alt="Instagram" className="w-10" />
+              </a>
+              
+              <a href="https://www.facebook.com/share/16xFHgKT72/" target="_blank">
                   <Image src={Facebook} alt="Facebook" className="w-10" />
+              </a>
                 </div>
                 <p className="!text-[12px] text-[#656565] ">2025 ©️ triyuginarayanshaddi</p>
               </div>

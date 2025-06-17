@@ -19,9 +19,9 @@ const page = () => {
         <div className="flex flex-col  gap-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <Image src={tick} alt="image" className="w-[70px] md:w-[45px] h-auto" />
-            <h3 className="text-[28px] md:text-[38px] font-bold text-center">
+            <p className="text-[28px] md:text-[38px] font-bold text-center">
               Your request has been submitted.
-            </h3>
+            </p>
           </div>
           <p className="text-justify md:text-center">
             Thank you for reaching out. Our team will connect with you shortly

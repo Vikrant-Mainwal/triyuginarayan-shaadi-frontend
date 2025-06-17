@@ -13,17 +13,17 @@ const ContactSupportHero = () => {
       </div>
 
       <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-start">
-          <h1 className="py-6">
+          <p className="py-6 main-heading">
           “We're here to help <span className="text-[#A42D2B]">Begin</span> your{" "}
           <span className="text-[#A42D2B]">New journey</span>”
-        </h1>
+        </p>
         <div className="flex flex-col gap-4 text-justify md:text-start px-5 md:px-0">
-          <p>
+          <p className="para">
             Planning a wedding is a big step. Planning one at a sacred place
             like Triyuginarayan Temple makes it even more special — and we
             understand how important it is to get every detail just right.
           </p>
-          <p>
+          <p className="para">
             Whether you’re just starting to think about a temple wedding or
             you’ve already chosen your date, our team is here to support you
             with care, clarity, and complete attention. No pressure. No rush.

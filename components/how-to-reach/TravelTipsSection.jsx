@@ -42,9 +42,9 @@ const travelTips = [
 const TravelTipsSection = () => {
   return (
     <section className="w-[90%] mx-auto mt-25 px-5 text-start">
-      <h2 className="text-[35px] md:text-[52px] text-center mb-10 raleway font-bold py-5">
+      <p className="text-center mb-10 heading py-5">
         Helpful Travel <span className="text-[#A42D2B]">Tips</span>
-      </h2>
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {travelTips.map(({ icon, alt, text }, index) => (
@@ -55,7 +55,7 @@ const TravelTipsSection = () => {
             <div className="flex justify-center md:justify-start">
             <Image src={icon} alt={alt} className="w-[70px]"/>
             </div>
-            <p className="text-justify md:text-start">{text}</p>
+            <p className="text-justify md:text-start para">{text}</p>
           </article>
         ))}
       </div>
