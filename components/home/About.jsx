@@ -14,23 +14,22 @@ const About = () => {
             About <span className="text-[#A42D2B]">Us</span>
           </p>
           <p className="para text-justify md:text-start">
-            At Triyuginarayan Shaadi, we specialize in planning authentic and
-            beautiful Triyuginarayan temple weddings. This is the place where
-            Lord Shiva and Goddess Parvati were married, and the eternal fire
-            from their wedding still burns here today.
+            At Triyuginarayan Shaadi, we deal with organizing original and
+            lovely Triyuginarayan temple weddings. It is here that Lord Shiva
+            and Goddess Parvati got married, and the ever-lasting fire from
+            their wedding still exists here today.
           </p>
           <p className="para text-justify md:text-start">
-            We've got a team of local pros and experienced planners ready to
-            make sure your big day goes off without a hitch. We totally get how
-            important and emotional weddings are, so we'll handle everything –
-            ceremonies, decor, food, where folks stay, and all those special
-            traditions. Basically, we're here to take care of all the details
-            from start to finish.
+            We have local experts and experienced planners who will make your
+            big day go without any glitch. We know how important and sentimental
+            weddings are, so we will take care of everything – ceremonies,
+            decor, food, where people stay, and all that ritualistic stuff. We
+            also offer complete support on Triyuginarayan Temple Wedding Cost
+            and tailored packages.
           </p>
           <p className="para text-justify md:text-start">
-            As your dedicated Triyuginarayan wedding planner, our goal is
-            simple: to make your sacred celebration peaceful, personalized, and
-            unforgettable.
+            Being your own Triyuginarayan wedding planner, our goal is simple:
+            to have your sacred ritual peaceful, tailored, and unforgettable.
           </p>
 
           <div className="mt-10 m-auto md:mt-15 md:ml-0">

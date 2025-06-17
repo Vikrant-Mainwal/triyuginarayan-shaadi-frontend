@@ -24,10 +24,11 @@ const Plans = () => {
           <span className="text-[#A42D2B]">Wedding Packages</span>{" "}
         </p>
 
-        <p className="para text-justify md:text-center px-6">
-          We offer two thoughtfully crafted wedding packages designed to fit
-          different visions and budgets. Both ensure an authentic Triyuginarayan
-          destination wedding experience.
+        <p className="para text-justify md:text-center px-6 lg:w-[70vw] mx-auto">
+          We have two well-crafted wedding packages that cater to varying budget
+          scales and tastes. Both are designed to provide a memorable
+          destination wedding experience while keeping the Triyuginarayan Temple
+          Wedding Cost affordable and clear.
         </p>
       </div>
 
@@ -40,7 +41,9 @@ const Plans = () => {
             }`}
           >
             <div className="flex flex-col items-center gap-4 mt-10">
-              <p className="text-[28px] md:text-[38px] font-bold">{item.title}</p>
+              <p className="text-[28px] md:text-[38px] font-bold">
+                {item.title}
+              </p>
               <p className="!text-[14px] text-center p-[12px] font-bold text-[#656565]">
                 {item.description}
               </p>
@@ -80,7 +83,10 @@ const Plans = () => {
               </div>
             </div>
 
-            <button className="bg-[#A42D2B] rounded-[7px] px-8 py-3 text-white my-10 cursor-pointer " onClick={()=>setIsOpenForm(true)}>
+            <button
+              className="bg-[#A42D2B] rounded-[7px] px-8 py-3 text-white my-10 cursor-pointer "
+              onClick={() => setIsOpenForm(true)}
+            >
               Select Package
             </button>
             {isOpenForm && <TopUpForm onClose={() => setIsOpenForm(false)} />}

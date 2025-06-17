@@ -25,10 +25,10 @@ const Testimonials = () => {
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
+              <p className="open-sans italic px-6">“Felt like a dream wedding in heaven. The team was supportive every step.”</p>
               <div>
                 
-                <p className="font-semibold"> Senha and varun</p>
+                <p className="font-semibold"> Neha and Rohan</p>
                 <p className="text-gray-500">Mumbai,India</p>
               </div>
             </div>
@@ -44,10 +44,10 @@ const Testimonials = () => {
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6 text-[16px] ">“A magical and peaceful wedding. Everything was beautifully planned — we didn’t have to worry about a thing.”</p>
+              <p className="open-sans italic px-6 text-[16px] ">“From rituals to reception, they made everything seamless and spiritual.”</p>
               <div>
-                <p className="font-semibold">Ritika & Kuna</p>
-                <p className="text-gray-500">New Delhi, India</p>
+                <p className="font-semibold">Priya and Ankit</p>
+                <p className="text-gray-500">Kerala, India</p>
               </div>
             </div>
           </div>
@@ -62,10 +62,10 @@ const Testimonials = () => {
               <div className="w-fit border-[1px] rounded-full">
                 <Image src={Profilepic} alt="profile-pic"/>
               </div>
-              <p className="open-sans italic px-6 text-[16px]">“The rituals, the music, the setting — we couldn’t have asked for more. Triyuginarayan was the perfect choice.”</p>
+              <p className="open-sans italic px-6 text-[16px]">“It felt like a blessing. The team helped with every detail and treated us like family.”</p>
               <div>
-                <p className="font-semibold">Ananya & Rishi</p>
-                <p className="text-gray-500">Jaipur, India</p>
+                <p className="font-semibold">Shreya and Hitesh</p>
+                <p className="text-gray-500">Delhi, India</p>
               </div>
             </div>
           </div>
