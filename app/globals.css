@@ -48,7 +48,7 @@ h4{
   .bg-image {
     background-image: url('/hero_image_mobile.jpg'); /* note the lowercase 'h' */
     background-size: cover;
-    background-position: center;
+    background-position: top;
   } 
   .main-heading{
     font-family: "Raleway", sans-serif;

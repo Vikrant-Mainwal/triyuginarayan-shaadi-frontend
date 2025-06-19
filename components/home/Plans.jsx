@@ -36,8 +36,8 @@ const Plans = () => {
         {packageData.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col justify-between items-center rounded-[21px] shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] h-fit md:h-[1200px] w-[350px] md:w-[550px] mt-10 p-3 ${
-              index === 1 ? "bg-[#FFF0E8]" : "bg-white "
+            className={`flex flex-col justify-between items-center rounded-[21px] shadow-[0px_4px_31.8px_rgba(0,0,0,0.18)] h-fit md:h-[1100px] w-[350px] md:w-[550px] mt-10 p-3 ${
+              index === 1 ? "bg-[#FFF0E8]" : "bg-white"
             }`}
           >
             <div className="flex flex-col items-center gap-4 mt-10">
@@ -50,13 +50,13 @@ const Plans = () => {
               <p className="text-[#A42D2B] !open-sans !md:text-[67px] !text-[48px] !font-bold">
                 {item.price}
               </p>
-              <div className="flex gap-5">
-                <p className="flex text-[12px] items-center gap-1 md:text-[16px]">
-                  <Image src={Pepicons} alt="image" />
-                  <span>{item.nights} Night </span>
-                </p>
-                <p className="flex text-[12px] items-center gap-1 md:text-[16px]">
+              <div className="flex gap-7">
+                <p className="flex text-[12px] items-center gap-2 md:text-[16px]">
                   <Image src={Calender} alt="image" />
+                  <span>{item.nights}</span>
+                </p>
+                <p className="flex text-[12px] items-center gap-2 md:text-[16px]">
+                  <Image src={Pepicons} alt="image" />
                   <span>{item.guests}</span>
                 </p>
               </div>
@@ -66,7 +66,7 @@ const Plans = () => {
                 <p className="text-[#A42D2B] py-3 md:py-6 text-[20px] font-medium text-center">
                   Package Includes
                 </p>
-                <ul className="flex flex-col text-start gap-4">
+                <ul className="flex flex-col text-start gap-4 px-0 md:px-10">
                   {item.features.map((feature, i) => {
                     return (
                       <li className="flex gap-4" key={i}>

@@ -310,7 +310,7 @@ const WeddingBookingForm = () => {
                   type="date"
                   value={formData.date}
                   onChange={handleChange}
-                  className="border border-gray-300 p-2 w-full mb-4 rounded-[7px] uppercase text-gray-600"
+                  className="border border-gray-300 p-2 w-full mb-4 rounded-[7px] uppercase"
                 />
                 {errors.date && (
                   <p className="text-red-500 !text-[14px] mt-[-12px]">

@@ -3,7 +3,7 @@
     "title": "Standard",
     "description": "Ideal for small, meaningful ceremonies",
     "price": "₹99,999",
-    "nights": 1,
+    "nights": "1 Night",
     "guests": "Up to 10 guests",
     "features": [
       "Vegetarian meals: breakfast, lunch & dinner",
@@ -17,7 +17,7 @@
     "title": "Premium",
     "description": "Designed for couples seeking a full spiritual & cultural experience",
     "price": "₹4,99,999",
-    "nights": 1,
+    "nights": "2 Days/1 Night",
     "guests": "Up to 30 guests",
     "features": [
       "Marriage registration support",

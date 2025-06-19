@@ -10,10 +10,10 @@ const WeddingCost = () => {
 
   return (
     <div className="relative mt-10 md:mt-25 px-4 md:px-10 text-center overflow-hidden">
-      <div className="absolute left-[-6%] top-[50%] transform -translate-y-1/2 hidden md:block z-10 w-[350px] h-[350px] rotate-[-75deg]">
+      <div className="absolute left-[-6%] top-[52%] transform -translate-y-1/2 hidden md:block z-10 w-[350px] h-[350px] rotate-[-75deg]">
         <Image src={gift2} alt="Gift 2 with Price" className="object-contain" />
       </div>
-      <div className="absolute right-[-4%] top-[50%] transform -translate-y-1/2 hidden md:block z-10 w-[350px] h-[350px] rotate-[75deg]">
+      <div className="absolute right-[-4%] top-[52%] transform -translate-y-1/2 hidden md:block z-10 w-[350px] h-[350px] rotate-[75deg]">
         <Image src={gift} alt="Gift 2 with Price" className="object-contain" />
       </div>
 
